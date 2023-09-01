@@ -25,5 +25,9 @@
       silent = true;
       action = ":BufferLinePick<cr>";
     };
+    normal."gy" = {
+      silent = true;
+      action = ":Telescope neoclip<cr>";
+    };
   };
 }

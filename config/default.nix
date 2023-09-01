@@ -32,6 +32,7 @@
     ./nix.nix
     ./noice.nix
     ./nvim-colorizer.nix
+    ./nvim-neoclip.nix
     ./nvimtree.nix
     ./options.nix
     ./rainbow-delimiters.nix
