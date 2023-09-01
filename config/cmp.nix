@@ -9,6 +9,22 @@
         {name = "crates";}
         {name = "buffer";}
       ];
+      mapping = {
+        "<C-d>" = "cmp.mapping.scroll_docs(-4)";
+        "<C-f>" = "cmp.mapping.scroll_docs(4)";
+        "<C-Space>" = "cmp.mapping.complete()";
+        "<C-e>" = "cmp.mapping.abort()";
+        "<CR>" = "cmp.mapping.confirm({ select = true })";
+        "<Down>" = {
+          action = "cmp.mapping.select_next_item()";
+          modes = ["i" "s"];
+        };
+        "<Up>" = {
+          action = "cmp.mapping.select_prev_item()";
+          modes = ["i" "s"];
+        };
+      };
+      snippet.expand = "luasnip";
     };
     cmp_luasnip.enable = true;
     cmp-zsh.enable = true;
