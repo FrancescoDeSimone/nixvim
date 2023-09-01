@@ -1,0 +1,44 @@
+{
+# Import all your configuration modules here
+  imports = [
+    ./airline.nix
+    ./autosave.nix
+    ./bufferline.nix
+    ./catppuccin.nix
+    ./clangd-extensions.nix
+    ./cmp.nix
+    ./comment.nix
+    ./coverage.nix
+    ./cursorline.nix
+    ./dap.nix
+    ./diffview.nix
+    ./git.nix
+    ./globals.nix
+    ./harpoon.nix
+    ./illuminate.nix
+    ./intellitab.nix
+    ./keymap.nix
+    ./leap.nix
+    ./lsp.nix
+    ./luasnip.nix
+    ./markdown.nix
+    ./mini.nix
+    ./neogen.nix
+    ./nix.nix
+    ./noice.nix
+    ./nvim-colorizer.nix
+    ./nvimtree.nix
+    ./options.nix
+    ./rainbow-delimiters.nix
+    ./rust.nix
+    ./sniprun.nix
+    ./specs.nix
+    ./spider.nix
+    ./telescope.nix
+    ./todo.nix
+    ./toggleterm.nix
+    ./treesitter.nix
+    ./trouble.nix
+    ./wilder-nvim.nix
+  ];
+}

@@ -1,0 +1,6 @@
+
+{
+  plugins.trouble= {
+    enable = true;
+  };
+}

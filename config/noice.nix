@@ -1,0 +1,3 @@
+{
+plugins.noice.enable = true;
+}

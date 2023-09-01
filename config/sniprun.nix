@@ -1,0 +1,5 @@
+{
+  plugins.sniprun = {
+    enable = true;
+  };
+}
