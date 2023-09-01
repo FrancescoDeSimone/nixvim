@@ -1,8 +1,8 @@
-{ pkgs, ... }:
+{ pkgs, ...}:
 {
   config = {
     extraPlugins = with pkgs.vimPlugins; [
-      codeium-vim
+      go-nvim
     ];
   };
 }

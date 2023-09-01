@@ -1,6 +1,6 @@
 {
   plugins = {
-    fugitive.enable = true;
+    # fugitive.enable = true;
     gitsigns.enable = true;
     gitmessenger.enable = true;
   };

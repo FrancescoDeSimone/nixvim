@@ -1,6 +1,0 @@
-{
-  plugins.specs= {
-    enable = true;
-  };
-}
-

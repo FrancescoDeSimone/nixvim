@@ -1,28 +1,31 @@
 {
-# Import all your configuration modules here
+  # Import all your configuration modules here
   imports = [
+    # ./autosave.nix
     ./airline.nix
+    ./auto-session.nix
     ./autocmd.nix
-    ./autosave.nix
     ./bufferline.nix
     ./catppuccin.nix
     ./clangd-extensions.nix
     ./cmp.nix
-    ./comment.nix
     ./codeium.nix
+    ./comment.nix
     ./coverage.nix
     ./cursorline.nix
     ./dap.nix
     ./diffview.nix
     ./git.nix
     ./globals.nix
-    ./harpoon.nix
+    ./go.nix
+    ./harpoon.nix # TODO configure keymap
     ./illuminate.nix
+    ./indent-blankline.nix
     ./intellitab.nix
     ./keymap.nix
     ./leap.nix
     ./lsp.nix
-    ./luasnip.nix
+    ./luasnip.nix # TODO configure snip
     ./markdown.nix
     ./mini.nix
     ./neogen.nix
@@ -34,13 +37,16 @@
     ./rainbow-delimiters.nix
     ./rust.nix
     ./sniprun.nix
-    ./specs.nix
     ./spider.nix
     ./telescope.nix
     ./todo.nix
     ./toggleterm.nix
     ./treesitter.nix
     ./trouble.nix
+    ./vim-bbye.nix
+    ./vim-matchup.nix
     ./wilder-nvim.nix
   ];
 }
+
+
