@@ -1,9 +1,6 @@
 {
   plugins.harpoon = {
     enable = true;
-    keymaps = {
-      addFile = "<leader>a";
-      # cmdToggleQuickMenu = "<leader>h";
-    };
+    keymaps.addFile = "<leader>a";
   };
 }

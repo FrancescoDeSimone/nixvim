@@ -1,5 +1,5 @@
 {
-  plugins= {
+  plugins = {
     lsp = {
       enable = true;
       servers = {
@@ -14,6 +14,16 @@
         rnix-lsp.enable = true;
         lua-ls.enable = true;
         html.enable = true;
+      };
+      keymaps.lspBuf = {
+        "gd" = "definition";
+        "gD" = "references";
+        "gt" = "type_definition";
+        "gi" = "implementation";
+        "K" = {
+          action = "hover";
+          desc = "Hover";
+        };
       };
     };
     null-ls = {
