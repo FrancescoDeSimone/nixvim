@@ -2,12 +2,14 @@
 # Import all your configuration modules here
   imports = [
     ./airline.nix
+    ./autocmd.nix
     ./autosave.nix
     ./bufferline.nix
     ./catppuccin.nix
     ./clangd-extensions.nix
     ./cmp.nix
     ./comment.nix
+    ./codeium.nix
     ./coverage.nix
     ./cursorline.nix
     ./dap.nix

@@ -10,6 +10,7 @@
     };
     lsp-format.enable = true;
     lspkind.enable = true;
+    lspkind.cmp.enable = true;
     lspsaga.enable = true;
     fidget.enable = true;
   };

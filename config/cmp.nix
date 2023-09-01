@@ -2,6 +2,13 @@
   plugins = {
     nvim-cmp = {
       enable = true;
+      sources = [
+        {name = "path";}
+        {name = "nvim_lsp";}
+        {name = "luasnip";}
+        {name = "crates";}
+        {name = "buffer";}
+      ];
     };
     cmp_luasnip.enable = true;
     cmp-zsh.enable = true;
