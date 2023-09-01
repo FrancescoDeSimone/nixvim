@@ -47,6 +47,7 @@
     ./trouble.nix
     ./vim-bbye.nix
     ./vim-matchup.nix
+    ./wgsl.nix
   ];
 }
 
