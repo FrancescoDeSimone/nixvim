@@ -38,9 +38,18 @@
       silent = true;
       action = ":lua MiniMisc.zoom()<cr>";
     };
+    terminal."<Esc>" =
+      {
+        silent = true;
+        action = "<C-\\><C-n>";
+      };
     normal."gy" = {
       silent = true;
       action = ":Telescope neoclip<cr>";
+    };
+    normal."<leader>h" = {
+      silent = true;
+      action = ":Telescope harpoon marks<cr>";
     };
   };
 }

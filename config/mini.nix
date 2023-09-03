@@ -24,7 +24,6 @@
       };
       surround = { };
       jump2d = { };
-      indentscope = { };
       misc = { };
     };
   };
