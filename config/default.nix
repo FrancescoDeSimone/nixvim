@@ -15,12 +15,12 @@
     ./comment.nix
     ./coverage.nix
     ./cursorline.nix
-    ./dap.nix
+    ./dap.nix # TODO configure dap adapter
     ./diffview.nix
     ./git.nix
     ./globals.nix
     ./go.nix
-    ./harpoon.nix # TODO configure keymap
+    ./harpoon.nix
     ./illuminate.nix
     ./indent-blankline.nix
     ./intellitab.nix

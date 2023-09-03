@@ -1,3 +1,3 @@
 {
-plugins.illuminate.enable = true;
+  plugins.illuminate.enable = true;
 }
