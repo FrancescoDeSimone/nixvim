@@ -1,9 +1,11 @@
 name: "AppImage"
+permissions:
+  contents: write
 on:
   pull_request:
   push:
 jobs:
-  tests:
+  AppImage:
     runs-on: ubuntu-latest
     steps:
     - name: Set up Git repository
@@ -14,7 +16,6 @@ jobs:
         github_access_token: ${{ secrets.GITHUB_TOKEN }}
     - name: Create the appImage
       run: nix bundle --bundler github:ralismark/nix-appimage .
-    - run: ls
     - name: "Upload appImage"
       uses: softprops/action-gh-release@v1
       with:
