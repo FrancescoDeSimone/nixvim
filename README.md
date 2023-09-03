@@ -1,6 +1,6 @@
 # nixvim
 
-This is my Neovim config built with nixvim from nix-community.
+This is my Neovim config built with [nixvim from nix-community](https://github.com/nix-community/nixvim).
 
 ## Installation
 
