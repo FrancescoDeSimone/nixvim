@@ -14,6 +14,7 @@ jobs:
         github_access_token: ${{ secrets.GITHUB_TOKEN }}
     - name: Create the appImage
       run: nix bundle --bundler github:ralismark/nix-appimage .
+    - run: ls
     - name: "Upload appImage"
       uses: softprops/action-gh-release@v1
       with:
