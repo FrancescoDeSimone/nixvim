@@ -1,0 +1,21 @@
+name: "AppImage"
+on:
+  pull_request:
+  push:
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set up Git repository
+      uses: actions/checkout@v3
+    - name: Install nix
+      uses: cachix/install-nix-action@v22
+      with:
+        github_access_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Create the appImage
+      run: nix bundle --bundler github:ralismark/nix-appimage .
+    - name: "Upload appImage"
+      uses: softprops/action-gh-release@v1
+      with:
+        files: neovim-0.9.1-x86_64.AppImage
+        tag_name: nixvim
