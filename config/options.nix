@@ -1,16 +1,20 @@
 {
   config = {
     options = {
-      number = true;
-      tabstop = 2;
-      shiftwidth = 2;
-      expandtab = true;
-      splitright = true;
-      splitbelow = true;
-      smartcase = true;
-      swapfile = false;
+      autoindent = true;
       cc = "80";
+      expandtab = true;
+      ignorecase = true;
+      incsearch = true;
+      listchars = "tab:>-,trail:●,nbsp:+";
+      number = true;
+      shiftwidth = 2;
+      smartcase = true;
       spell = true;
+      splitbelow = true;
+      splitright = true;
+      swapfile = false;
+      tabstop = 2;
     };
   };
 }
