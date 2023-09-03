@@ -13,6 +13,10 @@
       silent = true;
       action = ":TroubleToggle<cr>";
     };
+    normal."<leader>r" = {
+      silent = true;
+      action = ":lua vim.lsp.buf.rename()<cr>";
+    };
     normal."<leader>q" = {
       silent = true;
       action = ":Bdelete<cr>";

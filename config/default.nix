@@ -2,7 +2,7 @@
   # Import all your configuration modules here
   imports = [
     # ./autosave.nix
-    # ./luasnip.nix # TODO configure snip
+    ./luasnip.nix # TODO configure snip
     # ./wilder-nvim.nix
     ./airline.nix
     ./auto-session.nix
@@ -15,6 +15,7 @@
     ./comment.nix
     ./coverage.nix
     ./cursorline.nix
+    ./vim-visual-multi.nix
     ./dap.nix
     ./diffview.nix
     ./git.nix
