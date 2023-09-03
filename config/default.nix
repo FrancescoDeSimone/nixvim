@@ -2,7 +2,7 @@
   # Import all your configuration modules here
   imports = [
     # ./autosave.nix
-    ./luasnip.nix # TODO configure snip
+    # ./leap.nix
     # ./wilder-nvim.nix
     ./airline.nix
     ./auto-session.nix
@@ -15,7 +15,6 @@
     ./comment.nix
     ./coverage.nix
     ./cursorline.nix
-    ./vim-visual-multi.nix
     ./dap.nix
     ./diffview.nix
     ./git.nix
@@ -26,8 +25,8 @@
     ./indent-blankline.nix
     ./intellitab.nix
     ./keymap.nix
-    ./leap.nix
     ./lsp.nix
+    ./luasnip.nix # TODO configure snip
     ./markdown.nix
     ./mini.nix
     ./neogen.nix
@@ -48,6 +47,7 @@
     ./trouble.nix
     ./vim-bbye.nix
     ./vim-matchup.nix
+    ./vim-visual-multi.nix
     ./wgsl.nix
   ];
 }

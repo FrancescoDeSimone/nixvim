@@ -8,8 +8,24 @@
       };
       align = { };
       trailspace = { };
+      # gS
       splitjoin = { };
-      move = { };
+      move = {
+        mappings = {
+          left = "<M-Left>";
+          right = " <M-Right>";
+          down = "<M-Down>";
+          up = " <M-Up>";
+          line_left = "<M-Left>";
+          line_right = " <M-Right>";
+          line_down = "<M-Down>";
+          line_up = "<M-Up>";
+        };
+      };
+      surround = { };
+      jump2d = { };
+      indentscope = { };
+      misc = { };
     };
   };
 }

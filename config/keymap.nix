@@ -17,6 +17,11 @@
       silent = true;
       action = ":lua vim.lsp.buf.rename()<cr>";
     };
+    # align with mini.align
+    normalVisualOp."al" = {
+      silent = true;
+      action = "vipga=";
+    };
     normal."<leader>q" = {
       silent = true;
       action = ":Bdelete<cr>";
@@ -28,6 +33,10 @@
     normal."<leader>b" = {
       silent = true;
       action = ":BufferLinePick<cr>";
+    };
+    normal."<leader>z" = {
+      silent = true;
+      action = ":lua MiniMisc.zoom()<cr>";
     };
     normal."gy" = {
       silent = true;
