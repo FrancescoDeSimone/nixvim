@@ -3,11 +3,11 @@
     nvim-cmp = {
       enable = true;
       sources = [
-        {name = "path";}
-        {name = "nvim_lsp";}
-        {name = "luasnip";}
-        {name = "crates";}
-        {name = "buffer";}
+        { name = "path"; }
+        { name = "nvim_lsp"; }
+        { name = "luasnip"; }
+        { name = "crates"; }
+        { name = "buffer"; }
       ];
       mapping = {
         "<C-d>" = "cmp.mapping.scroll_docs(-4)";
@@ -17,11 +17,11 @@
         "<CR>" = "cmp.mapping.confirm({ select = true })";
         "<Down>" = {
           action = "cmp.mapping.select_next_item()";
-          modes = ["i" "s"];
+          modes = [ "i" "s" ];
         };
         "<Up>" = {
           action = "cmp.mapping.select_prev_item()";
-          modes = ["i" "s"];
+          modes = [ "i" "s" ];
         };
       };
       snippet.expand = "luasnip";
@@ -36,6 +36,7 @@
     cmp-rg.enable = true;
     cmp-path.enable = true;
     cmp-nvim-lua.enable = true;
+    cmp-clippy.enable = true;
     cmp-nvim-lsp-signature-help.enable = true;
     cmp-nvim-lsp.enable = true;
     cmp-npm.enable = true;
