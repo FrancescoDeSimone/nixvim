@@ -2,7 +2,7 @@
   config = {
     options = {
       autoindent = true;
-      cc = "80";
+      cc = "80,120";
       expandtab = true;
       ignorecase = true;
       incsearch = true;
