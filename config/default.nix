@@ -21,7 +21,7 @@
     ./globals.nix
     ./go.nix
     ./harpoon.nix
-    ./illuminate.nix
+    # ./illuminate.nix
     ./indent-blankline.nix
     ./intellitab.nix
     ./keymap.nix
@@ -36,10 +36,10 @@
     ./nvim-neoclip.nix
     ./nvimtree.nix
     ./options.nix
-    ./rainbow-delimiters.nix
+    # ./rainbow-delimiters.nix
     ./rust.nix
     ./sniprun.nix
-    ./spider.nix
+    # ./spider.nix
     ./telescope.nix
     ./todo.nix
     ./toggleterm.nix
