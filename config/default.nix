@@ -2,7 +2,10 @@
   # Import all your configuration modules here
   imports = [
     # ./autosave.nix
+    # ./illuminate.nix
     # ./leap.nix
+    # ./rainbow-delimiters.nix
+    # ./spider.nix
     # ./wilder-nvim.nix
     ./airline.nix
     ./auto-session.nix
@@ -21,7 +24,6 @@
     ./globals.nix
     ./go.nix
     ./harpoon.nix
-    # ./illuminate.nix
     ./indent-blankline.nix
     ./intellitab.nix
     ./keymap.nix
@@ -36,10 +38,8 @@
     ./nvim-neoclip.nix
     ./nvimtree.nix
     ./options.nix
-    # ./rainbow-delimiters.nix
     ./rust.nix
     ./sniprun.nix
-    # ./spider.nix
     ./telescope.nix
     ./todo.nix
     ./toggleterm.nix
@@ -48,6 +48,7 @@
     ./vim-bbye.nix
     ./vim-matchup.nix
     ./vim-visual-multi.nix
+    ./vimtex.nix
     ./wgsl.nix
   ];
 }

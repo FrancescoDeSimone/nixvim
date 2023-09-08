@@ -1,0 +1,3 @@
+{
+  plugins.vimtex.enable = true;
+}
