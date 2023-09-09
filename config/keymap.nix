@@ -42,6 +42,31 @@
       silent = true;
       action = ":BufferLinePick<cr>";
     };
+    normal."<leader>p" = {
+      silent = true;
+      action = ":DapToggleBreakpoint<cr>";
+    };
+    normal."<F9>" = {
+      silent = true;
+      action = ":DapContinue<cr>";
+    };
+
+    normal."<F8>" = {
+      silent = true;
+      action = ":DapStepOver<cr>";
+    };
+    normal."<F7>" = {
+      silent = true;
+      action = ":DapStepInto<cr>";
+    };
+    normal."<S><F8>" = {
+      silent = true;
+      action = ":DapStepOut<cr>";
+    };
+    normal."<leader>cd" = {
+      silent = true;
+      action = ":lua require(\"dapui\").close()<cr>";
+    };
     normal."<leader>z" = {
       silent = true;
       action = ":lua MiniMisc.zoom()<cr>";
