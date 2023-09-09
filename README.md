@@ -20,6 +20,3 @@ You can install this config using Nix or by downloading the appimages from the r
 1. Go to the [releases page](https://github.com/FrancescoDeSimone/nixvim/releases).
 2. Download the appimage  and give it executable permission 
 
-## To-do
-
-* Configure DAP
