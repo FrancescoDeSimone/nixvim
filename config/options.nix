@@ -1,5 +1,6 @@
 {
   config = {
+    luaLoader.enable = true;
     options = {
       autoindent = true;
       cc = "80,120";

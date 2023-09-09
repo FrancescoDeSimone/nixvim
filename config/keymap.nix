@@ -17,7 +17,7 @@
       silent = true;
       action = ":lua vim.lsp.buf.rename()<cr>";
     };
-# align with mini.align
+    # align with mini.align
     normalVisualOp."al" = {
       silent = true;
       action = "vipga=";
@@ -29,6 +29,10 @@
     normal."<leader>ca" = {
       silent = true;
       action = ":%bd|e#<cr>";
+    };
+    normal."<leader>sr" = {
+      silent = true;
+      action = ":lua require(\"ssr\").open()<cr>";
     };
     normal."<C-t>" = {
       silent = true;
@@ -43,10 +47,10 @@
       action = ":lua MiniMisc.zoom()<cr>";
     };
     terminal."<Esc>" =
-    {
-      silent = true;
-      action = "<C-\\><C-n>";
-    };
+      {
+        silent = true;
+        action = "<C-\\><C-n>";
+      };
     normal."gy" = {
       silent = true;
       action = ":Telescope neoclip<cr>";
