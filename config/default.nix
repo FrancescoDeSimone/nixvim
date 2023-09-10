@@ -25,6 +25,7 @@
     ./globals.nix
     ./go.nix
     ./harpoon.nix
+    ./neorg.nix
     ./indent-blankline.nix
     ./intellitab.nix
     ./keymap.nix
