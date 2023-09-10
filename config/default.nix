@@ -12,6 +12,9 @@
     ./auto-session.nix
     ./autocmd.nix
     ./bufferline.nix
+    ./telescope-dap-nvim.nix
+    ./telescope-undo-nvim.nix
+    ./telescope-ui-select-nvim.nix
     ./catppuccin.nix
     ./clangd-extensions.nix
     ./cmp.nix

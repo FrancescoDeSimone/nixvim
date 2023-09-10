@@ -17,6 +17,11 @@
       silent = true;
       action = ":lua vim.lsp.buf.rename()<cr>";
     };
+    normal."<leader>u" = {
+      silent = true;
+      action = ":Telescope undo<cr>";
+    };
+
     # align with mini.align
     normalVisualOp."al" = {
       silent = true;
