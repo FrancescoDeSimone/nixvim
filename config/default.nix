@@ -12,9 +12,6 @@
     ./auto-session.nix
     ./autocmd.nix
     ./bufferline.nix
-    ./telescope-dap-nvim.nix
-    ./telescope-undo-nvim.nix
-    ./telescope-ui-select-nvim.nix
     ./catppuccin.nix
     ./clangd-extensions.nix
     ./cmp.nix
@@ -28,7 +25,6 @@
     ./globals.nix
     ./go.nix
     ./harpoon.nix
-    ./neorg.nix
     ./indent-blankline.nix
     ./intellitab.nix
     ./keymap.nix
@@ -37,15 +33,20 @@
     ./markdown.nix
     ./mini.nix
     ./neogen.nix
+    ./neorg.nix
     ./nix.nix
     ./noice.nix
     ./nvim-colorizer.nix
     ./nvim-neoclip.nix
     ./nvimtree.nix
     ./options.nix
+    ./refactoring-nvim.nix
     ./rust.nix
     ./sniprun.nix
     ./ssr-nvim.nix
+    ./telescope-dap-nvim.nix
+    ./telescope-ui-select-nvim.nix
+    ./telescope-undo-nvim.nix
     ./telescope.nix
     ./todo.nix
     ./toggleterm.nix
