@@ -9,6 +9,7 @@
       incsearch = true;
       lazyredraw = true;
       listchars = "tab:>-,trail:●,nbsp:+";
+      synmaxcol = 125;
       number = true;
       shiftwidth = 2;
       smartcase = true;
