@@ -21,7 +21,14 @@
       silent = true;
       action = ":Telescope undo<cr>";
     };
-
+    normal."<C-x>" = {
+      silent = true;
+      action = ":split<cr>";
+    };
+    normal."<leader>n" = {
+      silent = true;
+      action = ":lua Toggle_Neorg()<cr>";
+    };
     # align with mini.align
     normalVisualOp."al" = {
       silent = true;

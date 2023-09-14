@@ -7,6 +7,7 @@
       expandtab = true;
       ignorecase = true;
       incsearch = true;
+      lazyredraw = true;
       listchars = "tab:>-,trail:●,nbsp:+";
       number = true;
       shiftwidth = 2;

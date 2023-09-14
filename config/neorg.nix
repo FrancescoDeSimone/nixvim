@@ -22,4 +22,16 @@
       };
     };
   };
+  extraConfigLua = ''
+    function _G.Toggle_Neorg()
+    local neorg_enabled2 = vim.inspect(vim.b.neorg_enabled2)
+    if neorg_enabled2 == "nil" then
+      vim.cmd[[Neorg index]]
+      vim.b.neorg_enabled2 = true
+    else
+      vim.cmd[[Neorg return]]
+      vim.b.neorg_enabled2 = nil
+    end
+    end
+  '';
 }
