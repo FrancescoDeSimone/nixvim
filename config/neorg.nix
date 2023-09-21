@@ -24,13 +24,13 @@
   };
   extraConfigLua = ''
     function _G.Toggle_Neorg()
-    local neorg_enabled2 = vim.inspect(vim.b.neorg_enabled2)
-    if neorg_enabled2 == "nil" then
+    local neorg_enabled = vim.inspect(vim.b.neorg_enabled)
+    if neorg_enabled == "nil" then
       vim.cmd[[Neorg index]]
-      vim.b.neorg_enabled2 = true
+      vim.b.neorg_enabled = true
     else
       vim.cmd[[Neorg return]]
-      vim.b.neorg_enabled2 = nil
+      vim.b.neorg_enabled = nil
     end
     end
   '';
