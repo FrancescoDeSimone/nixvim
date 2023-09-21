@@ -4,7 +4,6 @@
     # ./autosave.nix
     # ./illuminate.nix
     # ./leap.nix
-    # ./nvim-spectre.nix
     # ./rainbow-delimiters.nix
     # ./spider.nix
     # ./wilder-nvim.nix
@@ -19,7 +18,7 @@
     ./comment.nix
     ./coverage.nix
     ./cursorline.nix
-    ./dap.nix # TODO configure dap adapter
+    ./dap.nix
     ./diffview.nix
     ./git.nix
     ./globals.nix
@@ -38,6 +37,7 @@
     ./noice.nix
     ./nvim-colorizer.nix
     ./nvim-neoclip.nix
+    ./nvim-spectre.nix
     ./nvimtree.nix
     ./options.nix
     ./refactoring-nvim.nix

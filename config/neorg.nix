@@ -8,9 +8,9 @@
           folds = true;
         };
       };
-      # "core.defaults" = {
-      #   __empty = null;
-      # };
+      "core.defaults" = {
+        __empty = null;
+      };
       "core.dirman" = {
         config = {
           workspaces = {
