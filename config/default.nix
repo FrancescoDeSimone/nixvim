@@ -7,6 +7,7 @@
     # ./rainbow-delimiters.nix
     # ./spider.nix
     # ./wilder-nvim.nix
+    # ./wtf.nix
     ./airline.nix
     ./auto-session.nix
     ./autocmd.nix

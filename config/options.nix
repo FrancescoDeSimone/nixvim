@@ -5,9 +5,14 @@
       autoindent = true;
       cc = "80,120";
       expandtab = true;
+      equalalways = true;
       ignorecase = true;
       incsearch = true;
       lazyredraw = true;
+      ttyfast = true;
+      wildignorecase = true;
+      cursorline = false;
+      redrawtime = 10000;
       listchars = "tab:>-,trail:●,nbsp:+";
       synmaxcol = 125;
       number = true;
