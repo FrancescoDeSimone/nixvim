@@ -35,7 +35,7 @@
     ./neogen.nix
     ./neorg.nix
     ./nix.nix
-    ./noice.nix
+    # ./noice.nix
     ./nvim-colorizer.nix
     ./nvim-neoclip.nix
     ./nvim-spectre.nix
