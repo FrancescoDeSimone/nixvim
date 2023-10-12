@@ -44,7 +44,8 @@
     };
     normal."<leader>sr" = {
       silent = true;
-      action = ":lua require(\"ssr\").open()<cr>";
+      # action = ":lua require(\"ssr\").open()<cr>";
+      action = ":Spectre<cr>";
     };
     normal."<C-t>" = {
       silent = true;

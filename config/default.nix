@@ -1,23 +1,25 @@
 {
   # Import all your configuration modules here
   imports = [
+    # ./airline.nix
     # ./autosave.nix
+    # ./catppuccin.nix
     # ./illuminate.nix
     # ./leap.nix
+    # ./noice.nix
     # ./rainbow-delimiters.nix
     # ./spider.nix
     # ./wilder-nvim.nix
     # ./wtf.nix
-    ./airline.nix
+    # ./coverage.nix
+    # ./ssr-nvim.nix
     ./auto-session.nix
     ./autocmd.nix
     ./bufferline.nix
-    ./catppuccin.nix
     ./clangd-extensions.nix
     ./cmp.nix
     ./codeium.nix
     ./comment.nix
-    ./coverage.nix
     ./cursorline.nix
     ./dap.nix
     ./diffview.nix
@@ -29,13 +31,14 @@
     ./intellitab.nix
     ./keymap.nix
     ./lsp.nix
+    ./lualine.nix
     ./luasnip.nix # TODO configure snip
     ./markdown.nix
     ./mini.nix
+    ./navigator-nvim.nix
     ./neogen.nix
     ./neorg.nix
     ./nix.nix
-    # ./noice.nix
     ./nvim-colorizer.nix
     ./nvim-neoclip.nix
     ./nvim-spectre.nix
@@ -44,13 +47,13 @@
     ./refactoring-nvim.nix
     ./rust.nix
     ./sniprun.nix
-    ./ssr-nvim.nix
     ./telescope-dap-nvim.nix
     ./telescope-ui-select-nvim.nix
     ./telescope-undo-nvim.nix
     ./telescope.nix
     ./todo.nix
     ./toggleterm.nix
+    ./tokyonight.nix
     ./treesitter.nix
     ./trouble.nix
     ./venn.nix
