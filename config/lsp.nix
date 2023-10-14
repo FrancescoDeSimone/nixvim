@@ -41,7 +41,6 @@
     };
     lsp-lines = {
       enable = true;
-      currentLine = true;
     };
     lsp-format.enable = true;
     lspkind.enable = true;

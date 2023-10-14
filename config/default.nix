@@ -4,15 +4,17 @@
     # ./airline.nix
     # ./autosave.nix
     # ./catppuccin.nix
+    # ./coverage.nix
     # ./illuminate.nix
     # ./leap.nix
+    # ./navigator-nvim.nix
+    # ./neogen.nix
     # ./noice.nix
     # ./rainbow-delimiters.nix
     # ./spider.nix
+    # ./ssr-nvim.nix
     # ./wilder-nvim.nix
     # ./wtf.nix
-    # ./coverage.nix
-    # ./ssr-nvim.nix
     ./auto-session.nix
     ./autocmd.nix
     ./bufferline.nix
@@ -35,8 +37,6 @@
     ./luasnip.nix # TODO configure snip
     ./markdown.nix
     ./mini.nix
-    ./navigator-nvim.nix
-    ./neogen.nix
     ./neorg.nix
     ./nix.nix
     ./nvim-colorizer.nix
