@@ -6,7 +6,6 @@
         cmake.enable = true;
         clangd.enable = true;
         gopls.enable = true;
-        csharp-ls.enable = false;
         bashls.enable = true;
         # pyright.enable = true;
         pylsp.enable = true;
