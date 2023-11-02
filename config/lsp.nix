@@ -7,7 +7,8 @@
         clangd.enable = true;
         gopls.enable = true;
         bashls.enable = true;
-        pyright.enable = true;
+        # pyright.enable = true;
+        pylsp.enable = true;
         tsserver.enable = true;
         terraformls.enable = true;
         rust-analyzer.enable = true;
