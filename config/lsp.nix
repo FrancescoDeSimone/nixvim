@@ -13,6 +13,17 @@
         terraformls.enable = true;
         rust-analyzer.enable = true;
         rnix-lsp.enable = true;
+        rust-analyzer.settings = {
+          lens = {
+            implementations.enable = true;
+            references = {
+              method.enable = true;
+              adt.enable = true;
+              trait.enable = true;
+              enumVariant.enable = true;
+            };
+          };
+        };
         lua-ls.enable = true;
         html.enable = true;
       };
