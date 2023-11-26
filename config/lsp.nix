@@ -4,10 +4,9 @@
       enable = true;
       servers = {
         cmake.enable = true;
-        clangd.enable = true;
+        ccls.enable = true;
         gopls.enable = true;
         bashls.enable = true;
-        # pyright.enable = true;
         pylsp.enable = true;
         tsserver.enable = true;
         terraformls.enable = true;
@@ -41,6 +40,13 @@
     null-ls = {
       enable = true;
       sources = {
+        diagnostics = {
+          shellcheck.enable = true;
+          flake8.enable = true;
+        };
+        code_actions = {
+          shellcheck.enable = true;
+        };
         formatting = {
           black.enable = true;
           rustfmt.enable = true;

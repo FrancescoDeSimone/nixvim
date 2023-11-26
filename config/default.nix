@@ -15,6 +15,8 @@
     # ./ssr-nvim.nix
     # ./wilder-nvim.nix
     # ./wtf.nix
+    #./none-ls.nix
+    #./vim-visual-multi.nix
     ./auto-session.nix
     ./autocmd.nix
     ./bufferline.nix
@@ -37,6 +39,7 @@
     ./luasnip.nix # TODO configure snip
     ./markdown.nix
     ./mini.nix
+    #./multicursors.nix
     ./neorg.nix
     ./nix.nix
     ./nvim-colorizer.nix
@@ -59,7 +62,6 @@
     ./venn.nix
     ./vim-bbye.nix
     ./vim-matchup.nix
-    ./vim-visual-multi.nix
     ./vimtex.nix
     ./wgsl.nix
   ];
