@@ -57,14 +57,20 @@
         };
       };
     };
-    lsp-lines = {
-      enable = true;
-    };
+    #lsp-lines = {
+    #  enable = true;
+    #};
     lsp-format.enable = true;
     lspkind.enable = true;
     lspkind.cmp.enable = true;
-    lspsaga.enable = true;
-    lspsaga.lightbulb.enable = false;
+    lspsaga = {
+      enable = true;
+      lightbulb.enable = true;
+      codeAction.extendGitSigns = true;
+      codeAction.onlyInCursor = true;
+      implement.enable = true;
+      implement.virtualText = true;
+    };
     fidget.enable = true;
   };
 }
