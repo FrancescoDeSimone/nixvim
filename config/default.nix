@@ -7,15 +7,13 @@
     # ./coverage.nix
     # ./illuminate.nix
     # ./leap.nix
+    # ./multicursors.nix
     # ./navigator-nvim.nix
     # ./neogen.nix
     # ./noice.nix
     # ./rainbow-delimiters.nix
     # ./spider.nix
     # ./ssr-nvim.nix
-    ./wilder-nvim.nix
-    # ./multicursors.nix
-    #./vim-visual-multi.nix
     ./auto-session.nix
     ./autocmd.nix
     ./bufferline.nix
@@ -60,8 +58,10 @@
     ./venn.nix
     ./vim-bbye.nix
     ./vim-matchup.nix
+    ./vim-visual-multi.nix
     ./vimtex.nix
     ./wgsl.nix
+    ./wilder-nvim.nix
     ./wtf.nix
   ];
 }
