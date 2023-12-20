@@ -13,9 +13,8 @@
     # ./rainbow-delimiters.nix
     # ./spider.nix
     # ./ssr-nvim.nix
-    # ./wilder-nvim.nix
-    # ./wtf.nix
-    #./none-ls.nix
+    ./wilder-nvim.nix
+    # ./multicursors.nix
     #./vim-visual-multi.nix
     ./auto-session.nix
     ./autocmd.nix
@@ -39,7 +38,6 @@
     ./luasnip.nix # TODO configure snip
     ./markdown.nix
     ./mini.nix
-    #./multicursors.nix
     ./neorg.nix
     ./nix.nix
     ./nvim-colorizer.nix
@@ -64,5 +62,6 @@
     ./vim-matchup.nix
     ./vimtex.nix
     ./wgsl.nix
+    ./wtf.nix
   ];
 }

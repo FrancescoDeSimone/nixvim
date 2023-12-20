@@ -11,8 +11,12 @@
         tsserver.enable = true;
         terraformls.enable = true;
         rust-analyzer.enable = true;
+        rust-analyzer.installCargo = false;
+        rust-analyzer.installRustc = false;
         rnix-lsp.enable = true;
         rust-analyzer.settings = {
+          interpret.tests = true; # test this
+          completion.fullFunctionSignatures.enable = true;
           lens = {
             implementations.enable = true;
             references = {
@@ -37,20 +41,19 @@
         };
       };
     };
-    null-ls = {
+    none-ls = {
       enable = true;
       sources = {
         diagnostics = {
           shellcheck.enable = true;
           flake8.enable = true;
+          golangci_lint.enable = true;
         };
-        code_actions = {
-          shellcheck.enable = true;
-        };
+        code_actions = { shellcheck.enable = true; };
         formatting = {
           black.enable = true;
           rustfmt.enable = true;
-          prettier.enable = true;
+          # prettier.enable = true;
           nixpkgs_fmt.enable = true;
           nixfmt.enable = true;
 

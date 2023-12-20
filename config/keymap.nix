@@ -1,101 +1,207 @@
 {
-  maps = {
-    normalVisualOp.";" = ":";
-    normalVisualOp."<leader>e" = {
-      silent = true;
+  keymaps = [
+    {
+      key = ";";
+      action = ":";
+    }
+    {
+      key = "<leader>e";
       action = ":NvimTreeToggle<cr>";
-    };
-    normalVisualOp."<C-s>" = {
-      silent = true;
-      action = ":w<cr>";
-    };
-    normal."<leader>t" = {
-      silent = true;
-      action = ":TroubleToggle<cr>";
-    };
-    normal."<leader>r" = {
-      silent = true;
-      action = ":lua vim.lsp.buf.rename()<cr>";
-    };
-    normal."<leader>u" = {
-      silent = true;
-      action = ":Telescope undo<cr>";
-    };
-    normal."<C-x>" = {
-      silent = true;
-      action = ":split<cr>";
-    };
-    normal."<leader>n" = {
-      silent = true;
-      action = ":lua Toggle_Neorg()<cr>";
-    };
-    # align with mini.align
-    normalVisualOp."al" = {
-      silent = true;
-      action = "vipga=";
-    };
-    normal."<leader>q" = {
-      silent = true;
-      action = ":Bdelete<cr>";
-    };
-    normal."<leader>ca" = {
-      silent = true;
-      action = ":%bd|e#<cr>";
-    };
-    normal."<leader>sr" = {
-      silent = true;
-      # action = ":lua require(\"ssr\").open()<cr>";
-      action = ":Spectre<cr>";
-    };
-    normal."<C-t>" = {
-      silent = true;
-      action = ":ToggleTerm<cr>";
-    };
-    normal."<leader>b" = {
-      silent = true;
-      action = ":BufferLinePick<cr>";
-    };
-    normal."<leader>p" = {
-      silent = true;
-      action = ":DapToggleBreakpoint<cr>";
-    };
-    normal."<F9>" = {
-      silent = true;
-      action = ":DapContinue<cr>";
-    };
-
-    normal."<F8>" = {
-      silent = true;
-      action = ":DapStepOver<cr>";
-    };
-    normal."<F7>" = {
-      silent = true;
-      action = ":DapStepInto<cr>";
-    };
-    normal."<S><F8>" = {
-      silent = true;
-      action = ":DapStepOut<cr>";
-    };
-    normal."<leader>cd" = {
-      silent = true;
-      action = ":lua require(\"dapui\").close()<cr>";
-    };
-    normal."<leader>z" = {
-      silent = true;
-      action = ":lua MiniMisc.zoom()<cr>";
-    };
-    terminal."<Esc>" =
-      {
+      options = {
         silent = true;
-        action = "<C-\\><C-n>";
+        desc = "Toggle NvimTree";
       };
-    normal."gy" = {
-      silent = true;
+    }
+    {
+      key = "<leader>e";
+      action = ":NvimTreeToggle<cr>";
+      options = {
+        silent = true;
+        desc = "Toggle NvimTree";
+      };
+    }
+    {
+      key = "<C-s>";
+      action = ":w<cr>";
+      options = {
+        silent = true;
+        desc = "Save";
+      };
+    }
+    {
+      key = "<leader>t";
+      action = ":TroubleToggle<cr>";
+      options = {
+        silent = true;
+        desc = "Toggle Trouble";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>r";
+      action = ":lua vim.lsp.buf.rename()<cr>";
+      options = {
+        silent = true;
+        desc = "Rename";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>u";
+      action = ":Telescope undo<cr>";
+      options = {
+        silent = true;
+        desc = "Undo telescope menu";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>n";
+      action = ":lua Toggle_Neorg()<cr>";
+      options = {
+        silent = true;
+        desc = "Toggle Neorg";
+      };
+    }
+    {
+      key = "<leader>a";
+      action = "vipga=";
+      options = {
+        silent = true;
+        desc = "Align with mini.align";
+      };
+    }
+    {
+      key = "<leader>q";
+      action = ":Bdelete<cr>";
+      options = {
+        silent = true;
+        desc = "Close buffer";
+      };
+    }
+    {
+      key = "<leader>ca";
+      action = ":%bd|e#<cr>";
+      options = {
+        silent = true;
+        desc = "Close all buffers except current";
+      };
+    }
+    {
+      key = "<leader>sr";
+      action = ":Spectre<cr>";
+      options = {
+        silent = true;
+        desc = "Search and replace all";
+      };
+    }
+    {
+      key = "<C-t>";
+      action = ":ToggleTerm<cr>";
+      options = {
+        silent = true;
+        desc = "Toggle terminal";
+      };
+    }
+    {
+      key = "<leader>b";
+      action = ":BufferLinePick<cr>";
+      options = {
+        silent = true;
+        desc = "Pick a buffer";
+      };
+    }
+    {
+      key = "<leader>p";
+      action = ":DapToggleBreakpoint<cr>";
+      options = {
+        silent = true;
+        desc = "Toggle breakpoint";
+      };
+    }
+    {
+      key = "<F9>";
+      action = ":DapContinue<cr>";
+      options = {
+        silent = true;
+        desc = "Continue (DAP)";
+      };
+    }
+    {
+      key = "<F8>";
+      action = ":DapStepOver<cr>";
+      options = {
+        silent = true;
+        desc = "Step over (DAP)";
+      };
+    }
+    {
+      key = "<F7>";
+      action = ":DapStepInto<cr>";
+      options = {
+        silent = true;
+        desc = "Step into (DAP)";
+      };
+    }
+    {
+      key = "<S><F8>";
+      action = ":DapStepOut<cr>";
+      options = {
+        silent = true;
+        desc = "Step out (DAP)";
+      };
+    }
+    {
+      key = "<leader>cd";
+      action = '':lua require("dapui").close()<cr>'';
+      options = {
+        silent = true;
+        desc = "Close DAP UI";
+      };
+    }
+    {
+      key = "<leader>z";
+      action = ":lua MiniMisc.zoom()<cr>";
+      options = {
+        silent = true;
+        desc = "Full screen buffer";
+      };
+    }
+    {
+      mode = "t";
+      key = "<Esc>";
+      action = "<C-\\><C-n>";
+      options = {
+        silent = true;
+        desc = "Escape terminal mode";
+      };
+    }
+    {
+      mode = "n";
+      key = "gy";
       action = ":Telescope neoclip<cr>";
-    };
-    normal."<leader>h" = {
-      silent = true;
+      options = {
+        silent = true;
+        desc = "Telescope neoclip";
+      };
+    }
+    {
+      mode = "n";
+      key = "gj";
+      action = ":Telescope jumplist<cr>";
+      options = {
+        silent = true;
+        desc = "Telescope jumplist";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>h";
       action = ":Telescope harpoon marks<cr>";
-    };
-  };
+      options = {
+        silent = true;
+        desc = "Telescope harpoon marks";
+      };
+    }
+  ];
 }

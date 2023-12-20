@@ -1,9 +1,6 @@
-{ pkgs, ... }:
 {
-  config = {
-    extraPlugins = with pkgs.vimPlugins; [
-      wtf-nvim
-    ];
+  plugins.wtf = {
+    enable = true;
+    keymaps.search = "<leader>g";
   };
 }
-
