@@ -64,7 +64,7 @@
       };
     }
     {
-      key = "<leader>a";
+      key = "<C-a>";
       action = "vipga=";
       options = {
         silent = true;
