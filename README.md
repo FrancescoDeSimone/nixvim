@@ -10,13 +10,13 @@ You can install this config using Nix or by downloading the appimages from the r
 
 1. Install Nix.
 2. [enable flakes](https://nixos.wiki/wiki/Flakes)
-3. run 
+3. run
    ```
-     nix run git+https://github.com/FrancescoDeSimone/nixvim 
+   nix run git+https://github.com/FrancescoDeSimone/nixvim
    ```
 
 ### Downloading the Appimage
 
 1. Go to the [releases page](https://github.com/FrancescoDeSimone/nixvim/releases).
-2. Download the appimage  and give it executable permission 
+2. Download the appimage  and give it executable permission
 
