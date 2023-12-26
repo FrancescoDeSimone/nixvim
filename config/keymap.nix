@@ -63,14 +63,14 @@
         desc = "Toggle Neorg";
       };
     }
-    {
-      key = "<C-a>";
-      action = "vipga=";
-      options = {
-        silent = true;
-        desc = "Align with mini.align";
-      };
-    }
+    # {
+    #   key = "<C-a>";
+    #   action = "vipga=";
+    #   options = {
+    #     silent = true;
+    #     desc = "Align with mini.align";
+    #   };
+    # }
     {
       key = "<leader>q";
       action = ":Bdelete<cr>";
