@@ -1,5 +1,7 @@
 {
-  plugins.nvim-tree= {
+  plugins.nvim-tree = {
     enable = true;
+    hijackNetrw = false;
+    disableNetrw = false;
   };
 }

@@ -8,6 +8,7 @@
       equalalways = true;
       ignorecase = true;
       incsearch = true;
+      foldcolumn = "1";
       lazyredraw = true;
       ttyfast = true;
       wildignorecase = true;
@@ -26,4 +27,3 @@
     };
   };
 }
-

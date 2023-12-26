@@ -14,9 +14,11 @@
     # ./rainbow-delimiters.nix
     # ./spider.nix
     # ./ssr-nvim.nix
+    # ./yanky.nix
     ./auto-session.nix
     ./autocmd.nix
     ./bufferline.nix
+    ./barbecue.nix
     ./clangd-extensions.nix
     ./cmp.nix
     ./codeium.nix
@@ -39,6 +41,7 @@
     ./neorg.nix
     ./nix.nix
     ./nvim-colorizer.nix
+    ./nvim-lightbulb.nix
     ./nvim-neoclip.nix
     ./nvim-spectre.nix
     ./nvimtree.nix
