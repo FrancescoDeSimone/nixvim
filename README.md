@@ -4,7 +4,13 @@ This is my Neovim config built with [nixvim from nix-community](https://github.c
 
 ## Installation
 
-You can install this config using Nix or by downloading the appimages from the releases.
+You can install it with the makefile (specify INSTALL_PATH to the path where you want to install):
+
+```sh
+make install
+```
+
+or you can install this config using Nix or by downloading the appimages from the releases.
 
 ### Using Nix
 

@@ -13,14 +13,6 @@
       };
     }
     {
-      key = "<leader>e";
-      action = ":NvimTreeToggle<cr>";
-      options = {
-        silent = true;
-        desc = "Toggle NvimTree";
-      };
-    }
-    {
       key = "<C-s>";
       action = ":w<cr>";
       options = {
@@ -63,14 +55,6 @@
         desc = "Toggle Neorg";
       };
     }
-    # {
-    #   key = "<C-a>";
-    #   action = "vipga=";
-    #   options = {
-    #     silent = true;
-    #     desc = "Align with mini.align";
-    #   };
-    # }
     {
       key = "<leader>q";
       action = ":Bdelete<cr>";
