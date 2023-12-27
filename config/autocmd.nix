@@ -13,6 +13,11 @@
         command = ":lua vim.diagnostic.hide()";
       }
       {
+        event = [ "CursorHold" ];
+        pattern = [ "*" ];
+        command = ":lua vim.diagnostic.open_float(nil, {focus=false})";
+      }
+      {
         event = [ "BufWritePre" ];
         pattern = [ "*" ];
         command = ":%s/s+$//e";

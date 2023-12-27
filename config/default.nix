@@ -14,11 +14,12 @@
     # ./rainbow-delimiters.nix
     # ./spider.nix
     # ./ssr-nvim.nix
+    # ./tagbar.nix
     # ./yanky.nix
     ./auto-session.nix
     ./autocmd.nix
-    ./bufferline.nix
     ./barbecue.nix
+    ./bufferline.nix
     ./clangd-extensions.nix
     ./cmp.nix
     ./codeium.nix

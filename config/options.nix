@@ -4,26 +4,27 @@
     options = {
       autoindent = true;
       cc = "80,120";
-      expandtab = true;
+      cursorline = false;
       equalalways = true;
+      expandtab = true;
+      foldcolumn = "1";
       ignorecase = true;
       incsearch = true;
-      foldcolumn = "1";
       lazyredraw = true;
-      ttyfast = true;
-      wildignorecase = true;
-      cursorline = false;
-      redrawtime = 10000;
       listchars = "tab:>-,trail:●,nbsp:+";
-      synmaxcol = 125;
       number = true;
+      redrawtime = 10000;
       shiftwidth = 2;
       smartcase = true;
       spell = true;
       splitbelow = true;
       splitright = true;
       swapfile = false;
+      synmaxcol = 125;
       tabstop = 2;
+      ttyfast = true;
+      updatetime = 1000;
+      wildignorecase = true;
     };
   };
 }
