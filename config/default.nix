@@ -11,7 +11,9 @@
     # ./navigator-nvim.nix
     # ./neogen.nix
     # ./noice.nix
+    # ./nvim-lightbulb.nix
     # ./rainbow-delimiters.nix
+    # ./refactoring-nvim.nix
     # ./spider.nix
     # ./ssr-nvim.nix
     # ./tagbar.nix
@@ -42,12 +44,10 @@
     ./neorg.nix
     ./nix.nix
     ./nvim-colorizer.nix
-    ./nvim-lightbulb.nix
     ./nvim-neoclip.nix
     ./nvim-spectre.nix
     ./nvimtree.nix
     ./options.nix
-    ./refactoring-nvim.nix
     ./rust.nix
     ./sniprun.nix
     ./telescope-dap-nvim.nix
