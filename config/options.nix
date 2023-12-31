@@ -6,6 +6,7 @@
       cc = "80,120";
       cursorline = false;
       equalalways = true;
+      signcolumn = "number";
       expandtab = true;
       foldcolumn = "1";
       ignorecase = true;

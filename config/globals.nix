@@ -1,6 +1,5 @@
 {
   globals = {
-    signcolumn = "y";
     mapleader = " ";
     VM_theme = "purplegray";
     auto_session_pre_save_cmds =
