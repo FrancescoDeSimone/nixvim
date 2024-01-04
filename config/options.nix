@@ -13,6 +13,7 @@
       incsearch = true;
       lazyredraw = true;
       listchars = "tab:>-,trail:●,nbsp:+";
+      list = true;
       number = true;
       redrawtime = 10000;
       shiftwidth = 2;

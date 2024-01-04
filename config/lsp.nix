@@ -4,7 +4,7 @@
       enable = true;
       servers = {
         cmake.enable = true;
-        # ccls.enable = true;
+        #ccls.enable = true;
         clangd.enable = true;
         gopls.enable = true;
         bashls.enable = true;
