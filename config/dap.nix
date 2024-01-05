@@ -202,14 +202,13 @@
               "watches",
               "breakpoints",
               "stacks",
-              { id = "scopes", size = 0.25 },
+              -- { id = "scopes", size = 0.25 },
             },
             size = 40, -- 40 columns
             position = "left",
           },
           {
             elements = {
-              "repl",
               "console",
             },
             size = 0.25, -- 25% of total lines
