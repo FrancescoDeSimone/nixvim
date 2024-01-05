@@ -137,7 +137,10 @@
         desc = "Toggle UI";
       };
     }
+
   ];
+  plugins.dap.extensions.dap-python.enable = true;
+  plugins.dap.extensions.dap-go.enable = true;
   extraPlugins = [
     pkgs.vimPlugins.nvim-dap
     pkgs.vimPlugins.nvim-dap-ui
@@ -350,7 +353,6 @@
       })
       table.insert(dap.configurations.rust, rr_dap.get_rust_config())
       table.insert(dap.configurations.cpp, rr_dap.get_config())
-
     '';
 
 }
