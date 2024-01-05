@@ -8,15 +8,20 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     flake-utils.url = "github:numtide/flake-utils";
+    nixneovimplugins.url = "github:NixNeovim/NixNeovimPlugins";
   };
 
-  outputs = { nixpkgs, nixvim, flake-utils, ... }@inputs:
+  outputs = { nixpkgs, nixvim, flake-utils, nixneovimplugins, ... }@inputs:
     let config = import ./config; # import the module directly
     in
     flake-utils.lib.eachDefaultSystem (system:
       let
         nixvimLib = nixvim.lib.${system};
-        pkgs = import nixpkgs { inherit system; config.allowUnfree = true;};
+        pkgs = import nixpkgs {
+          inherit system;
+          overlays = [ nixneovimplugins.overlays.default ];
+          config.allowUnfree = true;
+        };
         nixvim' = nixvim.legacyPackages.${system};
         nvim = nixvim'.makeNixvimWithModule {
           inherit pkgs;

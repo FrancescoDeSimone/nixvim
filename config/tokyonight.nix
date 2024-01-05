@@ -1,5 +1,10 @@
 {
-  colorschemes.tokyonight.enable = true;
-  colorschemes.tokyonight.lualineBold = true;
-  colorschemes.tokyonight.hideInactiveStatusline = true;
+  colorschemes.tokyonight = {
+    enable = true;
+    lualineBold = true;
+    terminalColors = true;
+    dayBrightness = 0;
+    hideInactiveStatusline = true;
+  };
+
 }

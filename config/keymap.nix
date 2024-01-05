@@ -104,46 +104,6 @@
       };
     }
     {
-      key = "<F9>";
-      action = ":DapContinue<cr>";
-      options = {
-        silent = true;
-        desc = "Continue (DAP)";
-      };
-    }
-    {
-      key = "<F8>";
-      action = ":DapStepOver<cr>";
-      options = {
-        silent = true;
-        desc = "Step over (DAP)";
-      };
-    }
-    {
-      key = "<F7>";
-      action = ":DapStepInto<cr>";
-      options = {
-        silent = true;
-        desc = "Step into (DAP)";
-      };
-    }
-    {
-      key = "<S><F8>";
-      action = ":DapStepOut<cr>";
-      options = {
-        silent = true;
-        desc = "Step out (DAP)";
-      };
-    }
-    {
-      key = "<leader>cd";
-      action = '':lua require("dapui").close()<cr>'';
-      options = {
-        silent = true;
-        desc = "Close DAP UI";
-      };
-    }
-    {
       key = "<leader>z";
       action = ":lua MiniMisc.zoom()<cr>";
       options = {
