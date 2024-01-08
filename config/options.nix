@@ -12,7 +12,8 @@
       ignorecase = true;
       incsearch = true;
       lazyredraw = true;
-      listchars = "tab:>-,trail:●,nbsp:+";
+      showbreak = "↪\\";
+      listchars = "tab:→ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨";
       list = true;
       number = true;
       redrawtime = 10000;
