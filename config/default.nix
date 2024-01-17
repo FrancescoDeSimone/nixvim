@@ -38,7 +38,7 @@
     ./keymap.nix
     ./lsp.nix
     ./lualine.nix
-    ./luasnip.nix # TODO configure snip
+    ./luasnip.nix
     ./markdown.nix
     ./mini.nix
     ./neorg.nix
