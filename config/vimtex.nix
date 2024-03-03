@@ -1,4 +1,4 @@
 {
   plugins.vimtex.enable = true;
-  plugins.vimtex.viewMethod = "zathura";
+  plugins.vimtex.settings.view_method = "zathura";
 }

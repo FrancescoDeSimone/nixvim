@@ -17,7 +17,6 @@
     # ./spider.nix
     # ./ssr-nvim.nix
     # ./tagbar.nix
-    # ./yanky.nix
     ./auto-session.nix
     ./autocmd.nix
     ./barbecue.nix
@@ -29,6 +28,7 @@
     ./cursorline.nix
     ./dap.nix
     ./diffview.nix
+    ./friendly-snippets.nix
     ./git.nix
     ./globals.nix
     ./go.nix
@@ -36,6 +36,7 @@
     ./indent-blankline.nix
     ./intellitab.nix
     ./keymap.nix
+    ./leetcode.nix
     ./lsp.nix
     ./lualine.nix
     ./luasnip.nix
@@ -67,5 +68,6 @@
     ./wgsl.nix
     ./wilder-nvim.nix
     ./wtf.nix
+    ./yanky.nix
   ];
 }
