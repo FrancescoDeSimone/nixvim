@@ -6,5 +6,4 @@
     dayBrightness = 0;
     hideInactiveStatusline = true;
   };
-
 }

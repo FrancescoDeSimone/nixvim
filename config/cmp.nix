@@ -1,38 +1,39 @@
 {
   plugins = {
-    nvim-cmp = {
+    cmp = {
       enable = true;
-      sources = [
-        { name = "path"; }
-        { name = "nvim_lsp"; }
-        { name = "luasnip"; }
-        { name = "crates"; }
-        { name = "buffer"; }
-      ];
-      mappingPresets = [ "insert" ];
-      mapping = {
-        "<C-d>" = "cmp.mapping.scroll_docs(-4)";
-        "<C-f>" = "cmp.mapping.scroll_docs(4)";
-        "<C-Space>" = "cmp.mapping.complete()";
-        "<C-e>" = "cmp.mapping.abort()";
-        "<CR>" = "cmp.mapping.confirm({ select = true })";
-        "<Down>" = {
-          action = "cmp.mapping.select_next_item()";
-          modes = [ "i" "s" ];
-        };
-        "<Up>" = {
-          action = "cmp.mapping.select_prev_item()";
-          modes = [ "i" "s" ];
+      autoEnableSources = true;
+      settings = {
+        sources = [
+          { name = "nvim_lsp"; }
+          { name = "luasnip"; }
+          { name = "path"; }
+          { name = "crates"; }
+          { name = "buffer"; }
+        ];
+        snippet.expand = ''
+          function(args)
+            require('luasnip').lsp_expand(args.body)
+          end
+        '';
+        mapping = {
+          "<C-Space>" = "cmp.mapping.complete()";
+          "<C-d>" = "cmp.mapping.scroll_docs(-4)";
+          "<C-e>" = "cmp.mapping.close()";
+          "<C-f>" = "cmp.mapping.scroll_docs(4)";
+          "<CR>" = "cmp.mapping.confirm({ select = true })";
+          "<UP>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
+          "<Down>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
         };
       };
-      snippet.expand = "luasnip";
     };
     cmp_luasnip.enable = true;
     cmp-zsh.enable = true;
+    cmp-digraphs.enable = true;
+    cmp-cmdline-history.enable = true;
     cmp-vim-lsp.enable = true;
     cmp-treesitter.enable = true;
     cmp-tmux.enable = true;
-    # cmp-tabnine.enable = true;
     cmp-spell.enable = true;
     cmp-rg.enable = true;
     cmp-path.enable = true;

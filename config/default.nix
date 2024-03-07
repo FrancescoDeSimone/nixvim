@@ -17,6 +17,7 @@
     # ./spider.nix
     # ./ssr-nvim.nix
     # ./tagbar.nix
+    # ./toggleterm.nix
     ./auto-session.nix
     ./autocmd.nix
     ./barbecue.nix
@@ -56,8 +57,8 @@
     ./telescope-undo-nvim.nix
     ./telescope.nix
     ./todo.nix
-    ./toggleterm.nix
-    ./tokyonight.nix
+    ./colorscheme.nix
+    ./notify.nix
     ./treesitter.nix
     ./trouble.nix
     ./venn.nix

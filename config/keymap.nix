@@ -30,6 +30,15 @@
     }
     {
       mode = "n";
+      key = "<A-a>";
+      action = ":Lspsaga code_action<cr>";
+      options = {
+        silent = true;
+        desc = "Code Action";
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>r";
       action = ":lua vim.lsp.buf.rename()<cr>";
       options = {
@@ -79,14 +88,14 @@
         desc = "Search and replace all";
       };
     }
-    {
-      key = "<C-t>";
-      action = ":ToggleTerm<cr>";
-      options = {
-        silent = true;
-        desc = "Toggle terminal";
-      };
-    }
+    # {
+    #   key = "<C-t>";
+    #   action = ":ToggleTerm<cr>";
+    #   options = {
+    #     silent = true;
+    #     desc = "Toggle terminal";
+    #   };
+    # }
     {
       key = "<leader>b";
       action = ":BufferLinePick<cr>";
