@@ -7,6 +7,8 @@
       cursorline = false;
       equalalways = true;
       signcolumn = "number";
+      sessionoptions =
+        "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions";
       expandtab = true;
       foldcolumn = "1";
       incsearch = true;
