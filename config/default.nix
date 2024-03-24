@@ -25,6 +25,7 @@
     ./clangd-extensions.nix
     ./cmp.nix
     ./codeium.nix
+    ./colorscheme.nix
     ./comment.nix
     ./cursorline.nix
     ./dap.nix
@@ -45,6 +46,7 @@
     ./mini.nix
     ./neorg.nix
     ./nix.nix
+    ./notify.nix
     ./nvim-colorizer.nix
     ./nvim-neoclip.nix
     ./nvim-spectre.nix
@@ -57,8 +59,6 @@
     ./telescope-undo-nvim.nix
     ./telescope.nix
     ./todo.nix
-    ./colorscheme.nix
-    ./notify.nix
     ./treesitter.nix
     ./trouble.nix
     ./venn.nix
