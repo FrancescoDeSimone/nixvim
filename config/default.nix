@@ -53,7 +53,7 @@
     ./nvimtree.nix
     ./options.nix
     ./rust.nix
-    ./sniprun.nix
+    # ./sniprun.nix
     ./telescope-dap-nvim.nix
     ./telescope-ui-select-nvim.nix
     ./telescope-undo-nvim.nix
@@ -68,7 +68,7 @@
     ./vimtex.nix
     ./wgsl.nix
     ./wilder-nvim.nix
-    ./wtf.nix
+    # ./wtf.nix
     ./yanky.nix
   ];
 }
