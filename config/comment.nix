@@ -1,7 +1,9 @@
 {
-  plugins.comment-nvim = {
+  plugins.comment = {
     enable = true;
-    sticky = true;
-    padding = true;
+    settings = {
+      sticky = true;
+      padding = true;
+    };
   };
 }

@@ -1,7 +1,7 @@
 {
   config = {
     luaLoader.enable = true;
-    options = {
+    opts = {
       autoindent = true;
       cc = "80,120";
       cursorline = false;
@@ -18,6 +18,7 @@
       listchars = "tab:→ ,nbsp:␣,trail:•,extends:⟩,precedes:⟨";
       list = true;
       number = true;
+      scrolloff = 9999; # to keep the cursor in the middle of the screen
       redrawtime = 10000;
       shiftwidth = 2;
       ignorecase = true;

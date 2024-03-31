@@ -24,6 +24,8 @@
     ./bufferline.nix
     ./clangd-extensions.nix
     ./cmp.nix
+    ./neoscroll.nix
+    ./eagle.nix
     ./codeium.nix
     ./colorscheme.nix
     ./comment.nix
