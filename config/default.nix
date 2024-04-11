@@ -14,24 +14,26 @@
     # ./nvim-lightbulb.nix
     # ./rainbow-delimiters.nix
     # ./refactoring-nvim.nix
+    # ./sniprun.nix
     # ./spider.nix
     # ./ssr-nvim.nix
     # ./tagbar.nix
     # ./toggleterm.nix
+    # ./wtf.nix
     ./auto-session.nix
     ./autocmd.nix
     ./barbecue.nix
     ./bufferline.nix
     ./clangd-extensions.nix
     ./cmp.nix
-    ./neoscroll.nix
-    ./eagle.nix
     ./codeium.nix
     ./colorscheme.nix
     ./comment.nix
     ./cursorline.nix
     ./dap.nix
+    ./debugprint.nix
     ./diffview.nix
+    ./eagle.nix
     ./friendly-snippets.nix
     ./git.nix
     ./globals.nix
@@ -47,6 +49,7 @@
     ./markdown.nix
     ./mini.nix
     ./neorg.nix
+    ./neoscroll.nix
     ./nix.nix
     ./notify.nix
     ./nvim-colorizer.nix
@@ -55,7 +58,6 @@
     ./nvimtree.nix
     ./options.nix
     ./rust.nix
-    # ./sniprun.nix
     ./telescope-dap-nvim.nix
     ./telescope-ui-select-nvim.nix
     ./telescope-undo-nvim.nix
@@ -70,7 +72,6 @@
     ./vimtex.nix
     ./wgsl.nix
     ./wilder-nvim.nix
-    # ./wtf.nix
     ./yanky.nix
   ];
 }

@@ -1,16 +1,10 @@
 {
   plugins.neorg = {
     enable = true;
-    # lazyLoading = true;
+    lazyLoading = true;
     modules = {
-      "core.concealer" = {
-        config = {
-          folds = true;
-        };
-      };
-      "core.defaults" = {
-        __empty = null;
-      };
+      "core.concealer" = { config = { folds = true; }; };
+      "core.defaults" = { __empty = null; };
       "core.dirman" = {
         config = {
           workspaces = {

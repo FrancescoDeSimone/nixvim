@@ -65,11 +65,11 @@
           cppcheck.enable = true;
           golangci_lint.enable = true;
         };
-        code_actions = {
-          gitrebase.enable = true;
-          gitsigns.enable = true;
-          refactoring.enable = true;
-        };
+        # code_actions = {
+        #   gitrebase.enable = true;
+        #   gitsigns.enable = true;
+        #   refactoring.enable = true;
+        # };
         formatting = {
           nixpkgs_fmt.enable = true;
           nixfmt.enable = true;

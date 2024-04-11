@@ -1,9 +1,9 @@
-{
-  colorschemes.tokyonight = {
-    enable = true;
-    lualineBold = true;
-    terminalColors = true;
-    dayBrightness = 0;
-    hideInactiveStatusline = true;
+{ pkgs, ... }: {
+  config = {
+    extraPlugins = with pkgs.vimPlugins;
+      [ (pkgs.callPackage ../repo/github-nvim-theme.nix { }) ];
+    extraConfigLua = ''
+      vim.cmd('colorscheme github_dark_high_contrast')
+    '';
   };
 }

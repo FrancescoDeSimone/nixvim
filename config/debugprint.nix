@@ -1,0 +1,3 @@
+{
+plugins.debugprint.enable = true;
+}

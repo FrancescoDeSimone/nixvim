@@ -18,7 +18,7 @@
       listchars = "tab:→ ,nbsp:␣,trail:•,extends:⟩,precedes:⟨";
       list = true;
       number = true;
-      scrolloff = 9999; # to keep the cursor in the middle of the screen
+      scrolloff = 10;
       redrawtime = 10000;
       shiftwidth = 2;
       ignorecase = true;

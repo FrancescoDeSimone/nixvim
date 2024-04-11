@@ -1,8 +1,6 @@
-{ pkgs, ... }:
-{
+{ pkgs, ... }: {
   config = {
-    extraPlugins = with pkgs.vimPlugins; [
-      codeium-vim
-    ];
+    extraPlugins = with pkgs.vimPlugins;
+      [ (pkgs.callPackage ../repo/codeium.nix { }) ];
   };
 }
