@@ -15,7 +15,8 @@
         rust-analyzer.installCargo = false;
         rust-analyzer.installRustc = false;
         # rnix-lsp.enable = true;
-        nixd.enable = true;
+        # nixd.enable = true;
+        nil_ls.enable = true;
         rust-analyzer.settings = {
           interpret.tests = true; # test this
           completion.fullFunctionSignatures.enable = true;

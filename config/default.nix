@@ -22,6 +22,7 @@
     # ./wtf.nix
     ./auto-session.nix
     ./autocmd.nix
+    ./ollama.nix
     ./barbecue.nix
     ./bufferline.nix
     ./clangd-extensions.nix
