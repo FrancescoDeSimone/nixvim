@@ -54,7 +54,7 @@
           tags.enable = true;
         };
         diagnostics = {
-          ansiblelint.enable = true;
+          # ansiblelint.enable = true;
           write_good.enable = true;
           yamllint.enable = true;
           trail_space.enable = true;
