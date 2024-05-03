@@ -49,7 +49,7 @@
     ./luasnip.nix
     ./markdown.nix
     ./mini.nix
-    ./neorg.nix
+    # ./neorg.nix
     ./neoscroll.nix
     ./nix.nix
     ./notify.nix

@@ -1,7 +1,6 @@
 {
   plugins.neorg = {
     enable = true;
-    lazyLoading = true;
     modules = {
       "core.concealer" = { config = { folds = true; }; };
       "core.defaults" = { __empty = null; };
