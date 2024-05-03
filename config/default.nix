@@ -10,6 +10,7 @@
     # ./multicursors.nix
     # ./navigator-nvim.nix
     # ./neogen.nix
+    # ./neorg.nix
     # ./noice.nix
     # ./nvim-lightbulb.nix
     # ./rainbow-delimiters.nix
@@ -22,7 +23,6 @@
     # ./wtf.nix
     ./auto-session.nix
     ./autocmd.nix
-    ./ollama.nix
     ./barbecue.nix
     ./bufferline.nix
     ./clangd-extensions.nix
@@ -34,7 +34,6 @@
     ./dap.nix
     ./debugprint.nix
     ./diffview.nix
-    ./eagle.nix
     ./friendly-snippets.nix
     ./git.nix
     ./globals.nix
@@ -49,7 +48,6 @@
     ./luasnip.nix
     ./markdown.nix
     ./mini.nix
-    # ./neorg.nix
     ./neoscroll.nix
     ./nix.nix
     ./notify.nix
@@ -57,6 +55,7 @@
     ./nvim-neoclip.nix
     ./nvim-spectre.nix
     ./nvimtree.nix
+    ./ollama.nix
     ./options.nix
     ./rust.nix
     ./telescope-dap-nvim.nix
