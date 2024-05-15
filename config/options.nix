@@ -33,6 +33,9 @@
       ttyfast = true;
       updatetime = 1000;
       wildignorecase = true;
+      encoding = "utf-8";
+      fileencoding = "utf-8";
+      cmdheight = 0;
     };
   };
 }
