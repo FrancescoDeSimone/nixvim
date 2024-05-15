@@ -55,6 +55,7 @@
     ./nvim-neoclip.nix
     ./nvim-spectre.nix
     ./nvimtree.nix
+    ./oil.nix
     ./ollama.nix
     ./options.nix
     ./rust.nix
