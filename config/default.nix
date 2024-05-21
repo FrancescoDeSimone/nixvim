@@ -29,7 +29,7 @@
     ./cmp.nix
     ./codeium.nix
     ./colorscheme.nix
-    ./comment.nix
+    # ./comment.nix
     ./cursorline.nix
     ./dap.nix
     ./debugprint.nix
