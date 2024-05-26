@@ -4,6 +4,7 @@
     # ./airline.nix
     # ./autosave.nix
     # ./catppuccin.nix
+    # ./comment.nix
     # ./coverage.nix
     # ./illuminate.nix
     # ./leap.nix
@@ -19,8 +20,6 @@
     # ./spider.nix
     # ./ssr-nvim.nix
     # ./tagbar.nix
-    # ./toggleterm.nix
-    # ./wtf.nix
     ./auto-session.nix
     ./autocmd.nix
     ./barbecue.nix
@@ -29,7 +28,7 @@
     ./cmp.nix
     ./codeium.nix
     ./colorscheme.nix
-    # ./comment.nix
+    ./conflict-nvim.nix
     ./cursorline.nix
     ./dap.nix
     ./debugprint.nix
