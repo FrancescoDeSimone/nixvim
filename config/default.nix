@@ -29,6 +29,7 @@
     ./codeium.nix
     ./colorscheme.nix
     ./conflict-nvim.nix
+    ./highlight-undo.nix
     ./cursorline.nix
     ./dap.nix
     ./debugprint.nix
