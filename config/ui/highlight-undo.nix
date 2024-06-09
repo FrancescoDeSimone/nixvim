@@ -2,7 +2,7 @@
   config = {
     extraPlugins = with pkgs.vimPlugins; [
       nui-nvim
-      (pkgs.callPackage ../repo/highlight-undo.nix { })
+      (pkgs.callPackage ../../repo/highlight-undo.nix { })
 
     ];
     extraConfigLua = ''

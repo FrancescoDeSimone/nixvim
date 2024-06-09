@@ -1,3 +1,0 @@
-{
-  plugins.coverage.enable = true;
-}

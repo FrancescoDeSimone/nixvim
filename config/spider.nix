@@ -1,3 +1,0 @@
-{
-  plugins.spider.enable = true;
-}

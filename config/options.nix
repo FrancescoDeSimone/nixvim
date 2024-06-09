@@ -19,6 +19,7 @@
       list = true;
       number = true;
       scrolloff = 10;
+      timeoutlen = 10;
       redrawtime = 10000;
       shiftwidth = 2;
       ignorecase = true;

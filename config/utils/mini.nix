@@ -24,7 +24,7 @@
         };
       };
       surround = { };
-      jump2d = { };
+      # jump2d = { };
       misc = { };
     };
   };

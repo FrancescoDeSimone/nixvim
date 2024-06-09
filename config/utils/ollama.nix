@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   config = {
     extraPlugins = with pkgs.vimPlugins;
-      let genNvim = pkgs.callPackage ../repo/gen-nvim.nix { };
+      let genNvim = pkgs.callPackage ../../repo/gen-nvim.nix { };
       in [ genNvim ];
     extraConfigLua = ''
       require('gen').setup({

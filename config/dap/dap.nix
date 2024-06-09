@@ -145,7 +145,7 @@
     pkgs.vimPlugins.nvim-dap
     pkgs.vimPlugins.nvim-dap-ui
     pkgs.vimPlugins.nvim-dap-virtual-text
-    (pkgs.callPackage ../repo/nvim-dap-rr.nix { })
+    (pkgs.callPackage ../../repo/nvim-dap-rr.nix { })
   ];
   extraConfigLua =
     let

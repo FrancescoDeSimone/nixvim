@@ -1,3 +1,0 @@
-{
-  plugins.multicursors.enable = true;
-}
