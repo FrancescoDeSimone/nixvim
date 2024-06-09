@@ -2,6 +2,11 @@
   config = {
     autoCmd = [
       {
+        event = [ "VimEnter" ];
+        pattern = [ "*" ];
+        command = "CodeiumDisable";
+      }
+      {
         event = [ "InsertLeave" ];
         pattern = [ "*" ];
         # idk why show() doesn't work
