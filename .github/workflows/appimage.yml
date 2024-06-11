@@ -16,7 +16,7 @@ jobs:
         with:
           github_access_token: ${{ secrets.GITHUB_TOKEN }}
       - name: remove full tex to reduce size
-        run: sed -i '2i \  plugins.vimtex.texlivePackage=null;' config/vimtex.nix
+        run: sed -i '2i \  plugins.vimtex.texlivePackage=null;' config/utils/vimtex.nix
       - name: Create the appImage
         run: nix bundle --bundler github:ralismark/nix-appimage .
       - name: "Upload appImage"
