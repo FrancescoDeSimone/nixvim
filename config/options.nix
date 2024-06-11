@@ -5,10 +5,10 @@
       autoindent = true;
       cc = "80,120";
       cursorline = false;
+      formatexpr = "v:lua.require'conform'.formatexpr()";
       equalalways = true;
       signcolumn = "number";
-      sessionoptions =
-        "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions";
+      sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions";
       expandtab = true;
       foldcolumn = "1";
       incsearch = true;
