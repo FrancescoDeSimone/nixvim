@@ -62,7 +62,7 @@
   keymaps = [
     {
       mode = "n";
-      key = "gd";
+      key = "gD";
       action = "<cmd>Lspsaga finder def<CR>";
       options = {
         desc = "Goto Definition";
@@ -71,7 +71,7 @@
     }
     {
       mode = "n";
-      key = "gr";
+      key = "gR";
       action = "<cmd>Lspsaga finder ref<CR>";
       options = {
         desc = "Goto References";

@@ -1,7 +1,14 @@
 {
   plugins.telescope = {
     enable = true;
-
+        keymaps = {
+      "gr" = "lsp_references";
+      "gd" = "lsp_definitions";
+      "gi" = "lsp_implementations";
+      "gt" = "lsp_type_definitions";
+      "gS" = "lsp_document_symbols";
+      "gW" = "lsp_workspace_symbols";
+    };
     extensions = {
       fzf-native = {
         enable = true;
