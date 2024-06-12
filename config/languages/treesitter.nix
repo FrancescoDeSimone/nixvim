@@ -1,21 +1,23 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   plugins.treesitter = {
     enable = true;
     folding = false;
     indent = true;
-    incrementalSelection.enable = true;
-    disabledLanguages = [ "make" ];
+    # incrementalSelection.enable = true;
+    disabledLanguages = ["make"];
     nixvimInjections = true;
-    grammarPackages = with pkgs.tree-sitter-grammars; [
-      tree-sitter-norg
-      tree-sitter-norg-meta
-    ];
+    grammarPackages = with pkgs.tree-sitter-grammars;
+      [
+        tree-sitter-norg
+        tree-sitter-norg-meta
+      ]
+      ++ pkgs.vimPlugins.nvim-treesitter.allGrammars;
   };
   plugins.treesitter-refactor.enable = true;
   # plugins.treesitter-context.enable = true;
   plugins.endwise.enable = true;
   plugins.treesitter-textobjects = {
-    enable = false;
+    enable = true;
     select = {
       enable = true;
       lookahead = true;
@@ -54,8 +56,8 @@
     };
     swap = {
       enable = true;
-      swapNext = { "<leader>a" = "@parameters.inner"; };
-      swapPrevious = { "<leader>A" = "@parameter.outer"; };
+      swapNext = {"<leader>a" = "@parameters.inner";};
+      swapPrevious = {"<leader>A" = "@parameter.outer";};
     };
   };
 }
