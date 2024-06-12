@@ -18,8 +18,8 @@
           settings = {
             completion.fullFunctionSignatures.enable = true;
             checkOnSave = true;
-            check = { command = "clippy"; };
-            procMacro = { enable = true; };
+            check = {command = "clippy";};
+            procMacro = {enable = true;};
             lens = {
               implementations.enable = true;
               references = {
@@ -36,34 +36,15 @@
           extraOptions = {
             settings = {
               Lua = {
-                completion = { callSnippet = "Replace"; };
-                telemetry = { enabled = false; };
-                hint = { enable = true; };
+                completion = {callSnippet = "Replace";};
+                telemetry = {enabled = false;};
+                hint = {enable = true;};
               };
             };
           };
         };
         html.enable = true;
       };
-      # keymaps.lspBuf = {
-      #   # "gd" = "definition";
-      #   "gD" = "declaration";
-      #   # "gt" = "type_definition";
-      #   # "gi" = "implementation";
-      #   "K" = {
-      #     action = "hover";
-      #     desc = "Hover";
-      #   };
-      # };
     };
-    # lspsaga = {
-    #   enable = true;
-    #   lightbulb.enable = true;
-    #   codeAction.extendGitSigns = true;
-    #   codeAction.onlyInCursor = true;
-    #   implement.enable = true;
-    #   implement.virtualText = true;
-    # };
-    # fidget.enable = true;
   };
 }

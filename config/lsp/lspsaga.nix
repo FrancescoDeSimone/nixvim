@@ -1,7 +1,7 @@
 {
   plugins.lspsaga = {
     enable = true;
-    beacon = { enable = true; };
+    beacon = {enable = true;};
     ui = {
       border = "rounded"; # One of none, single, double, rounded, solid, shadow
       codeAction = "💡"; # Can be any symbol you want 💡
@@ -16,7 +16,7 @@
       showCodeAction = true;
     };
     symbolInWinbar = {
-      enable = true; # Breadcrumbs
+      enable = false; # Breadcrumbs
     };
     codeAction = {
       extendGitSigns = true;
@@ -25,7 +25,7 @@
       numShortcut = true;
       keys = {
         exec = "<CR>";
-        quit = [ "<Esc>" "q" ];
+        quit = ["<Esc>" "q"];
       };
     };
     lightbulb = {
@@ -33,12 +33,12 @@
       sign = false;
       virtualText = true;
     };
-    implement = { enable = true; };
+    implement = {enable = true;};
     rename = {
       autoSave = false;
       keys = {
         exec = "<CR>";
-        quit = [ "<C-k>" "<Esc>" ];
+        quit = ["<C-k>" "<Esc>"];
         select = "x";
       };
     };

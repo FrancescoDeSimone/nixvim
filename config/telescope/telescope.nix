@@ -1,7 +1,7 @@
 {
   plugins.telescope = {
     enable = true;
-        keymaps = {
+    keymaps = {
       "gr" = "lsp_references";
       "gd" = "lsp_definitions";
       "gi" = "lsp_implementations";
@@ -48,11 +48,11 @@
         action = "command_history";
         options.desc = "Command History";
       };
-      "<leader>ff" = {
+      "<leader>f" = {
         action = "find_files";
         options.desc = "Find project files";
       };
-      "<leader>fb" = {
+      "<leader><leader>" = {
         action = "buffers";
         options.desc = "Buffers";
       };
@@ -117,4 +117,3 @@
     }
   '';
 }
-
