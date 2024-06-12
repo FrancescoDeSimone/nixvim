@@ -43,7 +43,7 @@
     ./ui/highlight-undo.nix
     ./ui/indent-blankline.nix
     ./ui/lualine.nix
-    # ./ui/noice.nix
+    ./ui/noice.nix
     ./ui/notify.nix
     ./ui/nvim-colorizer.nix
     ./ui/nvimtree.nix
