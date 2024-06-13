@@ -12,7 +12,6 @@
       expandtab = true;
       foldcolumn = "1";
       incsearch = true;
-      lazyredraw = true;
       undofile = true;
       showbreak = "↪\\";
       listchars = "tab:→ ,nbsp:␣,trail:•,extends:⟩,precedes:⟨";
