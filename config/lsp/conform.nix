@@ -5,6 +5,7 @@
     google-java-format
     prettierd
     stylua
+    shellcheck
   ];
   plugins.conform-nvim = {
     enable = true;
@@ -12,6 +13,7 @@
     formattersByFt = {
       html = [["prettierd" "prettier"]];
       css = [["prettierd" "prettier"]];
+      sh = ["shellcheck"];
       javascript = [["prettierd" "prettier"]];
       javascriptreact = [["prettierd" "prettier"]];
       typescript = [["prettierd" "prettier"]];

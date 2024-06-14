@@ -47,6 +47,7 @@
     ./ui/notify.nix
     ./ui/nvim-colorizer.nix
     ./ui/nvimtree.nix
+    ./ui/dressing.nix
 
     ./utils/auto-session.nix
     ./utils/cursorline.nix
@@ -62,7 +63,6 @@
     ./utils/nvim-spectre.nix
     ./utils/oil.nix
     ./utils/ollama.nix
-    ./utils/tagbar.nix
     ./utils/todo.nix
     ./utils/venn.nix
     ./utils/vim-bbye.nix
