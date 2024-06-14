@@ -21,14 +21,6 @@
       };
     }
     {
-      key = "<leader>t";
-      action = ":TroubleToggle<cr>";
-      options = {
-        silent = true;
-        desc = "Toggle Trouble";
-      };
-    }
-    {
       mode = "n";
       key = "<A-a>";
       action = ":Lspsaga code_action<cr>";
