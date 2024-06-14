@@ -7,7 +7,7 @@
         clangd.enable = true;
         gopls.enable = true;
         bashls.enable = true;
-        pylsp.enable = true;
+        pylyzer.enable = true;
         yamlls.enable = true;
         terraformls.enable = true;
         nil-ls.enable = true;

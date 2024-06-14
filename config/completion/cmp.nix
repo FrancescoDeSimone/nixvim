@@ -5,10 +5,10 @@
       autoEnableSources = true;
       settings = {
         sources = [
-          { name = "nvim_lsp"; }
-          { name = "luasnip"; }
-          { name = "path"; }
-          { name = "buffer"; }
+          {name = "nvim_lsp";}
+          {name = "luasnip";}
+          {name = "path";}
+          {name = "buffer";}
         ];
         performance = {
           debounce = 60;
@@ -16,7 +16,7 @@
           max_view_entries = 30;
         };
         formatting = {
-          fields = [ "kind" "abbr" "menu" ];
+          fields = ["kind" "abbr" "menu"];
           expandable_indicator = true;
         };
         snippet.expand = ''
@@ -36,27 +36,10 @@
       };
     };
     cmp-buffer.enable = true;
-    # cmp-cmdline-history.enable = true;
-    # cmp-conventionalcommits.enable = true;
-    # cmp-digraphs.enable = true;
-    # cmp-fuzzy-buffer.enable = true;
-    # cmp-git.enable = true;
-    # cmp-look.enable = true;
-    # cmp-npm.enable = true;
-    # cmp-rg.enable = true;
-    # cmp-spell.enable = true;
-    # cmp-tmux.enable = true;
-    # cmp-clippy.enable = true;
-    # cmp-dap.enable = true;
-    # cmp-dictionary.enable = true;
-    # cmp-fuzzy-path.enable = true;
     cmp-nvim-lsp-signature-help.enable = true;
     cmp-nvim-lsp.enable = true;
-    # cmp-nvim-lua.enable = true;
     cmp-path.enable = true;
-    # cmp-treesitter.enable = true;
     cmp_luasnip.enable = true;
-    # cmp_yanky.enable = true;
   };
   extraConfigLua = ''
       luasnip = require("luasnip")
