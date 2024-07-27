@@ -1,15 +1,15 @@
 {
   plugins.which-key = {
     enable = true;
-    ignoreMissing = false;
+    # ignoreMissing = false;
     icons = {
       breadcrumb = "»";
       group = "+";
       separator = ""; # ➜
     };
-    window = {
-      border = "none";
-      winblend = 0;
-    };
+    # window = {
+    #   border = "none";
+    #   winblend = 0;
+    # };
   };
 }

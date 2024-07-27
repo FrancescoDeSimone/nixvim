@@ -2,7 +2,6 @@
   plugins.none-ls = {
     enable = false;
     enableLspFormat = false;
-    updateInInsert = false;
     sources = {
       hover.printenv.enable = true;
       completion = {
@@ -32,11 +31,6 @@
         nixfmt.enable = true;
         black = {
           enable = true;
-          withArgs = ''
-            {
-              extra_args = { "--fast" },
-            }
-          '';
         };
       };
     };

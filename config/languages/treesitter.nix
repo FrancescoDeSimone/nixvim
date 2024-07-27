@@ -2,9 +2,11 @@
   plugins.treesitter = {
     enable = true;
     folding = false;
-    indent = true;
+    settings = {
+      indent.enable = true;
+      highlight.disable = ["make"];
+    };
     # incrementalSelection.enable = true;
-    disabledLanguages = ["make"];
     nixvimInjections = true;
     grammarPackages = with pkgs.tree-sitter-grammars;
       [
