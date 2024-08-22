@@ -31,7 +31,7 @@
     }
     {
       mode = "n";
-      key = "<leader>r";
+      key = "<lerder>r";
       action = ":lua vim.lsp.buf.rename()<cr>";
       options = {
         silent = true;
@@ -146,6 +146,15 @@
       options = {
         silent = true;
         desc = "Telescope harpoon marks";
+      };
+    }
+    {
+      mode = "n";
+      key = "<A-r>";
+      action = ":SmartResizeMode<cr>";
+      options = {
+        silent = true;
+        desc = "Resize mode";
       };
     }
   ];

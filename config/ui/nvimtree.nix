@@ -1,7 +1,9 @@
 {
   plugins.nvim-tree = {
     enable = true;
-    hijackNetrw = false;
-    disableNetrw = false;
+    hijackNetrw = true;
+    hijackCursor = true;
+    disableNetrw = true;
+    diagnostics.enable = true;
   };
 }

@@ -1,0 +1,3 @@
+{
+  plugins.trim.enable = true;
+}

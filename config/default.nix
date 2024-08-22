@@ -48,6 +48,7 @@
     ./ui/nvim-colorizer.nix
     ./ui/nvimtree.nix
     ./ui/dressing.nix
+    ./ui/smartsplits.nix
 
     ./utils/auto-session.nix
     ./utils/cursorline.nix
