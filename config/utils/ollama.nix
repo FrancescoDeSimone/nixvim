@@ -1,11 +1,11 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   config = {
-    extraPlugins = with pkgs.vimPlugins;
-      let genNvim = pkgs.callPackage ../../repo/gen-nvim.nix { };
-      in [ genNvim ];
+    extraPlugins = with pkgs.vimPlugins; let
+      genNvim = pkgs.callPackage ../../repo/gen-nvim.nix {};
+    in [genNvim];
     extraConfigLua = ''
       require('gen').setup({
-         model = "llama3:8b",
+         model = "llama3.1",
          host = "localhost",
          port = "11434",
          quit_map = "q",

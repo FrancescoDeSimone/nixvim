@@ -1,13 +1,16 @@
 {
   plugins.bufferline = {
     enable = true;
-    closeCommand = "Bdelete! %d";
-    diagnostics = true;
-    offsets = [
-      { filetype = "NvimTree"; }
-      { text = "File Explorer"; }
-      { highlight = "Directory"; }
-      { separator = true; }
-    ];
+    settings.options = {
+      mode = "tabs";
+      closeCommand = "Bdelete! %d";
+      diagnostics = "coc";
+      offsets = [
+        {filetype = "NvimTree";}
+        {text = "File Explorer";}
+        {highlight = "Directory";}
+        {separator = true;}
+      ];
+    };
   };
 }

@@ -2,7 +2,7 @@
   plugins.which-key = {
     enable = true;
     # ignoreMissing = false;
-    icons = {
+    settings.icons = {
       breadcrumb = "»";
       group = "+";
       separator = ""; # ➜
