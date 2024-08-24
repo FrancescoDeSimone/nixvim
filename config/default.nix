@@ -4,6 +4,7 @@
     ./globals.nix
     ./keymap.nix
     ./options.nix
+    ./autocmd.nix
 
     ./completion/cmp.nix
     ./completion/codeium.nix
