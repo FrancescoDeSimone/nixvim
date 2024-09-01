@@ -4,6 +4,21 @@
       enable = true;
       autoEnableSources = true;
       settings = {
+        completion.completeopt = "noselect";
+        preselect = "None";
+        experimental = {
+          ghost_text = true;
+        };
+        window = {
+          completion = {
+            border = ["╭" "─" "╮" "│" "╯" "─" "╰" "│"];
+            #border = "rounded";
+            winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:Visual,Search:None";
+          };
+          documentation = {
+            border = ["╭" "─" "╮" "│" "╯" "─" "╰" "│"];
+          };
+        };
         sources = [
           {name = "nvim_lsp";}
           {name = "luasnip";}
@@ -32,6 +47,8 @@
           "<CR>" = "cmp.mapping.confirm({ select = true })";
           "<UP>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
           "<Down>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+          "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+          "<S-Tab>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
         };
       };
     };
