@@ -35,7 +35,7 @@
     ./snippets/luasnip.nix
 
     ./telescope/nvim-neoclip.nix
-    ./telescope/telescope-dap-nvim.nix
+    #./telescope/telescope-dap-nvim.nix #TODO fix this
     ./telescope/telescope.nix
     ./telescope/yanky.nix
 
