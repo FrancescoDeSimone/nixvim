@@ -5,12 +5,13 @@
     ./keymap.nix
     ./options.nix
     ./autocmd.nix
+    ./performance.nix
 
     ./completion/cmp.nix
     ./completion/codeium.nix
     ./completion/lspkind.nix
 
-    ./dap/dap.nix
+    # ./dap/dap.nix #TODO fix this
 
     ./git/conflict-nvim.nix
     ./git/diffview.nix
