@@ -20,7 +20,7 @@
       action = "<cmd>ObsidianOpen<CR>";
       key = "<leader>oo";
       options = {
-        silent = true;
+        silent = false;
         desc = "Open Obsidian";
       };
     }
@@ -28,7 +28,7 @@
       action = "<cmd>ObsidianNew<CR>";
       key = "<leader>onn";
       options = {
-        silent = true;
+        silent = false;
         desc = "Create a new note";
       };
     }
@@ -97,14 +97,6 @@
       };
     }
     {
-      action = "<cmd>ObsidianTemplate<CR>";
-      key = "<leader>oT";
-      options = {
-        silent = true;
-        desc = "Insert a template from the templates folder";
-      };
-    }
-    {
       action = "<cmd>ObsidianSearch<CR>";
       key = "<leader>os";
       options = {
@@ -141,7 +133,7 @@ of text";
       action = "<cmd>ObsidianExtractNote<CR>";
       key = "<leader>oe";
       options = {
-        silent = true;
+        silent = false;
         desc = "Extract the selected text into a new note";
       };
     }
@@ -165,7 +157,7 @@ of text";
       action = "<cmd>ObsidianRename<CR>";
       key = "<leader>or";
       options = {
-        silent = true;
+        silent = false;
         desc = "Rename the current note";
       };
     }
@@ -175,14 +167,6 @@ of text";
       options = {
         silent = true;
         desc = "Cycle through checkbox options";
-      };
-    }
-    {
-      action = "<cmd>ObsidianNewFromTemplate<CR>";
-      key = "<leader>ont";
-      options = {
-        silent = true;
-        desc = "Create a new note from a template";
       };
     }
     {
