@@ -74,5 +74,6 @@
     ./utils/vimtex.nix
     ./utils/whichkey.nix
     ./utils/wilder-nvim.nix
+    ./utils/obsidian.nix
   ];
 }
