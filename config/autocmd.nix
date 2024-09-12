@@ -2,34 +2,34 @@
   config = {
     autoCmd = [
       {
-        event = [ "VimEnter" ];
-        pattern = [ "*" ];
+        event = ["VimEnter"];
+        pattern = ["*"];
         command = "CodeiumDisable";
       }
       {
-        event = [ "InsertLeave" ];
-        pattern = [ "*" ];
+        event = ["InsertLeave"];
+        pattern = ["*"];
         # idk why show() doesn't work
         command = ":lua vim.diagnostic.enable(0)";
       }
       {
-        event = [ "InsertEnter" ];
-        pattern = [ "*" ];
+        event = ["InsertEnter"];
+        pattern = ["*"];
         command = ":lua vim.diagnostic.hide()";
       }
       {
-        event = [ "CursorHold" ];
-        pattern = [ "*" ];
+        event = ["CursorHold"];
+        pattern = ["*"];
         command = ":lua vim.diagnostic.open_float(nil, {focus=false})";
       }
       {
-        event = [ "BufWritePre" ];
-        pattern = [ "*" ];
-        command = ":%s/s+$//e";
+        event = ["BufWritePre"];
+        pattern = ["*"];
+        command = ":%s/\s\+$//";
       }
       {
-        event = [ "VimResized" ];
-        pattern = [ "*" ];
+        event = ["VimResized"];
+        pattern = ["*"];
         command = "wincmd =";
       }
     ];
