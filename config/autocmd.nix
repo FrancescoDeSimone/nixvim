@@ -23,15 +23,19 @@
         command = ":lua vim.diagnostic.open_float(nil, {focus=false})";
       }
       {
-        event = ["BufWritePre"];
-        pattern = ["*"];
-        command = ":%s/\s\+$//";
-      }
-      {
         event = ["VimResized"];
         pattern = ["*"];
         command = "wincmd =";
       }
     ];
+    extraConfigVim = ''
+      function TrimWhiteSpace()
+        %s/\s*$//
+      endfunction
+      autocmd FileWritePre * call TrimWhiteSpace()
+      autocmd FileAppendPre * call TrimWhiteSpace()
+      autocmd FilterWritePre * call TrimWhiteSpace()
+      autocmd BufWritePre * call TrimWhiteSpace()
+    '';
   };
 }
