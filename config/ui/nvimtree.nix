@@ -6,4 +6,14 @@
     disableNetrw = true;
     diagnostics.enable = true;
   };
+  keymaps = [
+    {
+      key = "<leader>e";
+      action = ":NvimTreeToggle<cr>";
+      options = {
+        silent = true;
+        desc = "Toggle NvimTree";
+      };
+    }
+  ];
 }

@@ -18,4 +18,15 @@
       };
     };
   };
+  keymaps = [
+    {
+      mode = "n";
+      key = "<A-r>";
+      action = ":SmartResizeMode<cr>";
+      options = {
+        silent = true;
+        desc = "Resize mode";
+      };
+    }
+  ];
 }

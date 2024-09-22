@@ -141,7 +141,7 @@
 
     {
       mode = "n";
-      key = "<leader>ca";
+      key = "<A-a>";
       action = "<cmd>Lspsaga code_action<CR>";
       options = {
         desc = "Code Action";

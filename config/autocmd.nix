@@ -2,6 +2,16 @@
   config = {
     autoCmd = [
       {
+        event = ["FileWritePre" "FileAppendPre" "FilterWritePre" "BufWritePre"];
+        pattern = ["*"];
+        command = ":lua MiniTrailspace.trim()";
+      }
+      {
+        event = ["FileWritePre" "FileAppendPre" "FilterWritePre" "BufWritePre"];
+        pattern = ["*"];
+        command = ":lua MiniTrailspace.trim_last_lines()";
+      }
+      {
         event = ["VimEnter"];
         pattern = ["*"];
         command = "CodeiumDisable";
@@ -28,14 +38,5 @@
         command = "wincmd =";
       }
     ];
-    extraConfigVim = ''
-      function TrimWhiteSpace()
-        %s/\s*$//
-      endfunction
-      autocmd FileWritePre * call TrimWhiteSpace()
-      autocmd FileAppendPre * call TrimWhiteSpace()
-      autocmd FilterWritePre * call TrimWhiteSpace()
-      autocmd BufWritePre * call TrimWhiteSpace()
-    '';
   };
 }

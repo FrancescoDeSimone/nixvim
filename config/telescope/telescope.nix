@@ -95,7 +95,24 @@
         desc = "Document diagnostics";
       };
     }
-
+    {
+      mode = "n";
+      key = "<leader>u";
+      action = ":Telescope undo<cr>";
+      options = {
+        silent = true;
+        desc = "Undo telescope menu";
+      };
+    }
+    {
+      mode = "n";
+      key = "gj";
+      action = ":Telescope jumplist<cr>";
+      options = {
+        silent = true;
+        desc = "Telescope jumplist";
+      };
+    }
     {
       mode = "n";
       key = "<leader>st";

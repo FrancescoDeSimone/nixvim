@@ -2,15 +2,9 @@
   plugins.mini = {
     enable = true;
     modules = {
-      # ai = {
-      #   n_lines = 50;
-      #   search_method = "cover_or_next";
-      # };
-      align = { };
-      trailspace = { };
-      # gS
-      # splitjoin = { };
-      map = { window = { focusable = true; }; };
+      align = {};
+      trailspace = {};
+      map = {window = {focusable = true;};};
       move = {
         mappings = {
           left = "<M-Left>";
@@ -23,9 +17,18 @@
           line_up = "<M-Up>";
         };
       };
-      surround = { };
-      # jump2d = { };
-      misc = { };
+      misc = {};
+      trailspace = {};
     };
   };
+  keymaps = [
+    {
+      key = "<leader>z";
+      action = ":lua MiniMisc.zoom()<cr>";
+      options = {
+        silent = true;
+        desc = "Full screen buffer";
+      };
+    }
+  ];
 }

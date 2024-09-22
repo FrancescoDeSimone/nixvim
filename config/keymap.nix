@@ -5,55 +5,11 @@
       action = ":";
     }
     {
-      key = "<leader>e";
-      action = ":NvimTreeToggle<cr>";
-      options = {
-        silent = true;
-        desc = "Toggle NvimTree";
-      };
-    }
-    {
       key = "<C-s>";
       action = ":w<cr>";
       options = {
         silent = true;
         desc = "Save";
-      };
-    }
-    {
-      mode = "n";
-      key = "<A-a>";
-      action = ":Lspsaga code_action<cr>";
-      options = {
-        silent = true;
-        desc = "Code Action";
-      };
-    }
-    {
-      mode = "n";
-      key = "<lerder>r";
-      action = ":lua vim.lsp.buf.rename()<cr>";
-      options = {
-        silent = true;
-        desc = "Rename";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>u";
-      action = ":Telescope undo<cr>";
-      options = {
-        silent = true;
-        desc = "Undo telescope menu";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>n";
-      action = ":lua Toggle_Neorg()<cr>";
-      options = {
-        silent = true;
-        desc = "Toggle Neorg";
       };
     }
     {
@@ -73,46 +29,6 @@
       };
     }
     {
-      key = "<leader>sr";
-      action = ":Spectre<cr>";
-      options = {
-        silent = true;
-        desc = "Search and replace all";
-      };
-    }
-    # {
-    #   key = "<C-t>";
-    #   action = ":ToggleTerm<cr>";
-    #   options = {
-    #     silent = true;
-    #     desc = "Toggle terminal";
-    #   };
-    # }
-    {
-      key = "<leader>b";
-      action = ":BufferLinePick<cr>";
-      options = {
-        silent = true;
-        desc = "Pick a buffer";
-      };
-    }
-    {
-      key = "<leader>p";
-      action = ":DapToggleBreakpoint<cr>";
-      options = {
-        silent = true;
-        desc = "Toggle breakpoint";
-      };
-    }
-    {
-      key = "<leader>z";
-      action = ":lua MiniMisc.zoom()<cr>";
-      options = {
-        silent = true;
-        desc = "Full screen buffer";
-      };
-    }
-    {
       mode = "t";
       key = "<Esc>";
       action = "<C-\\><C-n>";
@@ -121,40 +37,113 @@
         desc = "Escape terminal mode";
       };
     }
+
     {
       mode = "n";
-      key = "gy";
-      action = ":Telescope neoclip<cr>";
+      action = "v<Up>";
+      key = "<S-Up>";
       options = {
         silent = true;
-        desc = "Telescope neoclip";
+        desc = "Shift+Up: Select lines above";
       };
     }
     {
       mode = "n";
-      key = "gj";
-      action = ":Telescope jumplist<cr>";
+      action = "v<Down>";
+      key = "<S-Down>";
       options = {
         silent = true;
-        desc = "Telescope jumplist";
+        desc = "Shift+Down: Select lines below";
       };
     }
     {
       mode = "n";
-      key = "<leader>h";
-      action = ":Telescope harpoon marks<cr>";
+      action = "v<Left>";
+      key = "<S-Left>";
       options = {
         silent = true;
-        desc = "Telescope harpoon marks";
+        desc = "Shift+Left: Select characters to the left";
       };
     }
     {
       mode = "n";
-      key = "<A-r>";
-      action = ":SmartResizeMode<cr>";
+      action = "v<Right>";
+      key = "<S-Right>";
       options = {
         silent = true;
-        desc = "Resize mode";
+        desc = "Shift+Right: Select characters to the right";
+      };
+    }
+    {
+      mode = "v";
+      action = "<Up>";
+      key = "<S-Up>";
+      options = {
+        silent = true;
+        desc = "Shift+Up: Move selection up";
+      };
+    }
+    {
+      mode = "v";
+      action = "<Down>";
+      key = "<S-Down>";
+      options = {
+        silent = true;
+        desc = "Shift+Down: Move selection down";
+      };
+    }
+    {
+      mode = "v";
+      action = "<Left>";
+      key = "<S-Left>";
+      options = {
+        silent = true;
+        desc = "Shift+Left: Move selection left";
+      };
+    }
+    {
+      mode = "v";
+      action = "<Right>";
+      key = "<S-Right>";
+      options = {
+        silent = true;
+        desc = "Shift+Right: Move selection right";
+      };
+    }
+    {
+      mode = "i";
+      action = "<Esc>v<Up>";
+      key = "<S-Up>";
+      options = {
+        silent = true;
+        desc = "Shift+Up: Exit insert mode and select lines above";
+      };
+    }
+    {
+      mode = "i";
+      action = "<Esc>v<Down>";
+      key = "<S-Down>";
+      options = {
+        silent = true;
+        desc = "Shift+Down: Exit insert mode and select lines below";
+      };
+    }
+    {
+      mode = "i";
+      action = "<Esc>v<Left>";
+      key = "<S-Left>";
+      options = {
+        silent = true;
+        desc = "Shift+Left: Exit insert mode and select characters to the left";
+      };
+    }
+    {
+      mode = "i";
+      action = "<Esc>v<Right>";
+      key = "<S-Right>";
+      options = {
+        silent = true;
+        desc = "Shift+Right: Exit insert mode and select characters to the right";
       };
     }
   ];

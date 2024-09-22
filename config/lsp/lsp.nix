@@ -48,4 +48,16 @@
       };
     };
   };
+
+  keymaps = [
+    {
+      mode = "n";
+      key = "<lerder>r";
+      action = ":lua vim.lsp.buf.rename()<cr>";
+      options = {
+        silent = true;
+        desc = "Rename";
+      };
+    }
+  ];
 }

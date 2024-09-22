@@ -12,4 +12,14 @@
       ];
     };
   };
+  keymaps = [
+    {
+      key = "<leader>b";
+      action = ":BufferLinePick<cr>";
+      options = {
+        silent = true;
+        desc = "Pick a buffer";
+      };
+    }
+  ];
 }
