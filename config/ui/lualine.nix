@@ -1,5 +1,9 @@
 {
-  plugins.lualine.enable = true;
-  plugins.lualine.globalstatus = true;
-  plugins.lualine.extensions = [ "fzf" ];
+  plugins.lualine = {
+    enable = true;
+    settings = {
+      globalstatus = true;
+      extensions = ["fzf"];
+    };
+  };
 }
