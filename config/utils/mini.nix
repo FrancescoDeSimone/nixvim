@@ -1,7 +1,11 @@
 {
   plugins.mini = {
     enable = true;
+    mockDevIcons = true;
     modules = {
+      icons = {
+        style = "glyph";
+      };
       align = {};
       trailspace = {};
       map = {window = {focusable = true;};};
