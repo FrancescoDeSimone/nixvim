@@ -51,6 +51,7 @@
     ./ui/nvimtree.nix
     ./ui/dressing.nix
     ./ui/smartsplits.nix
+    ./ui/aerial.nix
 
     ./utils/auto-session.nix
     ./utils/cursorline.nix
