@@ -1,9 +1,8 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   config = {
-    extraPlugins = with pkgs.vimPlugins;
-      [ (pkgs.callPackage ../../repo/github-nvim-theme.nix { }) ];
+    extraPlugins = with pkgs.vimPlugins; [gruber-darker-nvim];
     extraConfigLua = ''
-      vim.cmd('colorscheme github_dark_high_contrast')
+      vim.cmd('colorscheme gruber-darker')
     '';
   };
 }
