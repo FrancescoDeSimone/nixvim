@@ -30,4 +30,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: nixvim-light-x86_64.AppImage
-          tag_name: nixvim
+          tag_name: nixvim-light
