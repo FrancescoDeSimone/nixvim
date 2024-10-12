@@ -12,11 +12,6 @@
         command = ":lua MiniTrailspace.trim_last_lines()";
       }
       {
-        event = ["VimEnter"];
-        pattern = ["*"];
-        command = "CodeiumDisable";
-      }
-      {
         event = ["InsertLeave"];
         pattern = ["*"];
         # idk why show() doesn't work

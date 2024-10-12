@@ -8,8 +8,7 @@
     ./performance.nix
 
     ./completion/cmp.nix
-    ./completion/codeium.nix
-    ./completion/lspkind.nix
+    #./completion/codeium.nix
 
     # ./dap/dap.nix #TODO fix this
 
