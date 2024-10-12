@@ -29,5 +29,5 @@ jobs:
       - name: "Upload appImage"
         uses: softprops/action-gh-release@v1
         with:
-          files: nixvim-light-x86_64.AppImage
+          files: nvim.AppImage
           tag_name: nixvim-light
