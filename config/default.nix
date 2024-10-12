@@ -16,9 +16,9 @@
     ./git/diffview.nix
     ./git/git.nix
 
-    ./languages/clangd-extensions.nix
+    # ./languages/clangd-extensions.nix # TODO pimp this plugin
     ./languages/go.nix
-    ./languages/nix.nix
+    # ./languages/nix.nix
     ./languages/rust.nix
     ./languages/treesitter.nix
 
@@ -49,19 +49,20 @@
     ./ui/nvim-colorizer.nix
     ./ui/nvimtree.nix
     ./ui/dressing.nix
-    ./ui/smartsplits.nix
+    # ./ui/smartsplits.nix
     ./ui/aerial.nix
+    ./ui/lspkind.nix
 
     ./utils/auto-session.nix
     ./utils/cursorline.nix
     ./utils/debugprint.nix
-    ./utils/harpoon.nix
+    # ./utils/harpoon.nix
     ./utils/hmts.nix
     ./utils/intellitab.nix
     ./utils/leetcode.nix
     ./utils/markdown.nix
     ./utils/mini.nix
-    ./utils/neogen.nix
+    # ./utils/neogen.nix
     ./utils/neoscroll.nix
     ./utils/nvim-spectre.nix
     ./utils/oil.nix

@@ -8,12 +8,13 @@
     };
     # incrementalSelection.enable = true;
     nixvimInjections = true;
-    grammarPackages = with pkgs.tree-sitter-grammars;
-      [
-        tree-sitter-norg
-        tree-sitter-norg-meta
-      ]
-      ++ pkgs.vimPlugins.nvim-treesitter.allGrammars;
+    # not using norg anymore
+    # grammarPackages = with pkgs.tree-sitter-grammars;
+    #   [
+    #     tree-sitter-norg
+    #     tree-sitter-norg-meta
+    #   ]
+    #   ++ pkgs.vimPlugins.nvim-treesitter.allGrammars;
   };
   plugins.treesitter-refactor.enable = true;
   # plugins.treesitter-context.enable = true;

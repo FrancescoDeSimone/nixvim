@@ -10,9 +10,9 @@
         pylyzer.enable = true;
         yamlls.enable = true;
         terraformls.enable = true;
-        nil-ls.enable = true;
+        nil_ls.enable = true;
 
-        rust-analyzer = {
+        rust_analyzer = {
           enable = true;
           installCargo = false;
           installRustc = false;
@@ -32,7 +32,7 @@
             };
           };
         };
-        lua-ls = {
+        lua_ls = {
           enable = true;
           extraOptions = {
             settings = {

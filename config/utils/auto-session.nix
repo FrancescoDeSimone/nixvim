@@ -1,6 +1,6 @@
 {
   plugins.auto-session = {
     enable = true;
-    extraOptions = { auto_session_allowed_dirs = [ "$HOME/git/*" ]; };
+    settings = {auto_session_allowed_dirs = ["$HOME/git/*"];};
   };
 }
