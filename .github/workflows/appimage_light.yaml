@@ -19,11 +19,11 @@ jobs:
         run: sed -i '2i \  plugins.vimtex.texlivePackage=null;' config/utils/vimtex.nix
       - name: remove lsp
         run: |
-          sed '/lsp\/lspsaga.nix/d' config/default.nix
-          sed '/languages\/go.nix/d' config/default.nix
-          sed '/lsp\/lsp.nix/d' config/default.nix
-          sed '/none-ls\/none-ls.nix/d' config/default.nix
-          sed '/languages\/rust.nix/d' config/default.nix
+          sed -i '/lsp\/lspsaga.nix/d' config/default.nix
+          sed -i '/languages\/go.nix/d' config/default.nix
+          sed -i '/lsp\/lsp.nix/d' config/default.nix
+          sed -i '/none-ls\/none-ls.nix/d' config/default.nix
+          sed -i '/languages\/rust.nix/d' config/default.nix
       - name: Create the appImage
         run: nix bundle --bundler github:ralismark/nix-appimage .
       - name: "Upload appImage"
