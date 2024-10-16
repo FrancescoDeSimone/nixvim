@@ -10,8 +10,8 @@ vimUtils.buildVimPlugin rec {
   src = fetchFromGitHub {
     owner = "David-Kunz";
     repo = "gen.nvim";
-    hash = "sha256-Yp7HrDMOyR929AfM7IjEz4dP3RhIx9kXZ1Z3zRr5yJg=";
-    rev = "c9a73d8c0d462333da6d2191806ff98f2884d706";
+    hash = "sha256-rBUltJdluSseNUiTfjBZyuBwrGrASWbW1ROVdcAW6ug=";
+    rev = "83f1d6b6ffa6a6f32f6a93a33adc853f27541a94";
   };
 
   meta = with lib; {

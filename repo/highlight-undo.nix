@@ -1,23 +1,25 @@
-{ lib, vimUtils, fetchFromGitHub }:
-
+{
+  lib,
+  vimUtils,
+  fetchFromGitHub,
+}:
 vimUtils.buildVimPlugin rec {
   pname = "highlight-undo.nvim";
-  version = "1ea1c79372d7d93c88fd97543880927b7635e3d2";
+  version = "ee2f6355e08719fea902e7c478aa7351934f2bb6";
 
   src = fetchFromGitHub {
     owner = "tzachar";
     repo = "highlight-undo.nvim";
-    hash = "sha256-yGw1SxcUmGQxqKhMb2SJAai07g+rOpEJy2CqIX2h9dM=";
-    rev = "1ea1c79372d7d93c88fd97543880927b7635e3d2";
+    hash = "sha256-YOU0vZ9vs1/kAeKpSNo5VHZ/uoTtX2XLIXc2cHd+J10=";
+    rev = "ee2f6355e08719fea902e7c478aa7351934f2bb6";
   };
 
   meta = with lib; {
     description = "Highlight changed text after Undo / Redo operations";
     homepage = "https://github.com/tzachar/highlight-undo.nvim";
     license = licenses.mit;
-    maintainers = with maintainers; [ ];
+    maintainers = with maintainers; [];
     mainProgram = "highlight-undo.nvim";
     platforms = platforms.all;
   };
-
 }
