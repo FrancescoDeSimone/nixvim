@@ -8,7 +8,6 @@
     ./performance.nix
 
     ./completion/cmp.nix
-    #./completion/codeium.nix
 
     # ./dap/dap.nix #TODO fix this
 
@@ -18,7 +17,6 @@
 
     # ./languages/clangd-extensions.nix # TODO pimp this plugin
     ./languages/go.nix
-    # ./languages/nix.nix
     ./languages/rust.nix
     ./languages/treesitter.nix
 
@@ -33,7 +31,6 @@
 
     ./snippets/luasnip.nix
 
-    # ./telescope/nvim-neoclip.nix
     #./telescope/telescope-dap-nvim.nix #TODO fix this
     ./telescope/telescope.nix
     ./telescope/yanky.nix
@@ -48,8 +45,6 @@
     ./ui/notify.nix
     ./ui/nvim-colorizer.nix
     ./ui/nvimtree.nix
-    ./ui/dressing.nix
-    # ./ui/smartsplits.nix
     ./ui/aerial.nix
     ./ui/lspkind.nix
 
@@ -58,7 +53,6 @@
     ./utils/debugprint.nix
     # ./utils/harpoon.nix
     ./utils/hmts.nix
-    ./utils/intellitab.nix
     ./utils/leetcode.nix
     ./utils/markdown.nix
     ./utils/mini.nix
@@ -74,7 +68,6 @@
     ./utils/vim-visual-multi.nix
     ./utils/vimtex.nix
     ./utils/whichkey.nix
-    ./utils/wilder-nvim.nix
     ./utils/obsidian.nix
   ];
 }

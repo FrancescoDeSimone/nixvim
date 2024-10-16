@@ -32,15 +32,6 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>uf";
-      action = ":FormatToggle<CR>";
-      options = {
-        desc = "Toggle Format";
-        silent = true;
-      };
-    }
-    {
-      mode = "n";
       key = "<leader>cf";
       action = "<cmd>lua require('conform').format()<cr>";
       options = {

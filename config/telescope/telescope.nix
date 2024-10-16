@@ -10,19 +10,17 @@
       "gW" = "lsp_workspace_symbols";
     };
     extensions = {
-      fzf-native = {
-        enable = true;
-      };
-      ui-select = {
-        settings = {
-          specific_opts = {
-            codeactions = true;
-          };
-        };
-      };
-      undo = {
-        enable = true;
-      };
+      fzf-native.enable = true;
+      manix.enable = true;
+      undo.enable = true;
+      live-grep-args.enable = true;
+      # ui-select = {
+      #   settings = {
+      #     specific_opts = {
+      #       codeactions = true;
+      #     };
+      #   };
+      # };
     };
     # If you'd prefer Telescope not to enter a normal-like mode when hitting escape (and instead exiting), you can map <Esc> to do so via:
     settings = {
