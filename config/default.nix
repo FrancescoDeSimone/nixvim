@@ -57,8 +57,7 @@
     ./utils/markdown.nix
     ./utils/mini.nix
     # ./utils/neogen.nix
-    ./utils/neoscroll.nix
-    ./utils/nvim-spectre.nix
+    ./utils/grug-far.nix
     ./utils/oil.nix
     ./utils/ollama.nix
     ./utils/todo.nix

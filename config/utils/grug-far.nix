@@ -5,6 +5,7 @@
     ];
     extraConfigLua = ''
       require('grug-far').setup()
+      vim.g.maplocalleader = ' '
     '';
     keymaps = [
       {
