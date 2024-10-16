@@ -4,6 +4,7 @@
     folding = false;
     settings = {
       indent.enable = true;
+      highlight.enable = true;
       highlight.disable = ["make"];
     };
     # incrementalSelection.enable = true;
