@@ -95,7 +95,7 @@
     }
     {
       mode = "n";
-      key = "<leader>u";
+      key = "<leader>um";
       action = ":Telescope undo<cr>";
       options = {
         silent = true;

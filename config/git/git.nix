@@ -18,8 +18,8 @@
       action = "<cmd>Neogit<CR>";
     }
     {
-      mode = [ "n" "v" ];
-      key = "<leader>gh";
+      mode = ["n" "v"];
+      key = "<leader>ghm";
       action = "gitsigns";
       options = {
         silent = true;
@@ -63,7 +63,7 @@
       };
     }
     {
-      mode = [ "n" "v" ];
+      mode = ["n" "v"];
       key = "<leader>ghr";
       action = ":Gitsigns reset_hunk<CR>";
       options = {
@@ -72,7 +72,7 @@
       };
     }
     {
-      mode = [ "n" "v" ];
+      mode = ["n" "v"];
       key = "<leader>ghs";
       action = ":Gitsigns stage_hunk<CR>";
       options = {
