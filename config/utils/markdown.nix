@@ -4,7 +4,7 @@
     render-markdown = {
       enable = true;
       settings = {
-        preset = "round";
+        preset = "obsidian";
         bullet = {
           icons = [
             "◆ "
@@ -28,9 +28,6 @@
           position = "inline";
         };
         render_modes = true;
-        signs = {
-          enabled = false;
-        };
       };
     };
   };

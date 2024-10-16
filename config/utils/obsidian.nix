@@ -2,6 +2,7 @@
   plugins.obsidian = {
     enable = true;
     settings = {
+      ui.enable = false; # required by render-markdown
       completion = {
         min_chars = 2;
         nvim_cmp = true;
@@ -117,7 +118,7 @@
       key = "<leader>onl";
       options = {
         silent = true;
-        desc = "Create a new note and link it to an inline visual selection 
+        desc = "Create a new note and link it to an inline visual selection
 of text";
       };
     }
