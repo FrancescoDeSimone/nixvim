@@ -3,6 +3,7 @@
     lsp = {
       enable = true;
       servers = {
+        ast_grep.enable = true;
         cmake.enable = true;
         clangd.enable = true;
         gopls.enable = true;
