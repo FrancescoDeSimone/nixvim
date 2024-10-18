@@ -5,6 +5,14 @@
       action = ":";
     }
     {
+      key = "<leader>.";
+      action = ":%s/<C-r><C-w>/<C-r><C-w>/gI<Left><Left><Left>";
+      options = {
+        silent = false;
+        desc = "Search And Replace The Word Under The Cursor";
+      };
+    }
+    {
       key = "<C-s>";
       action = ":w<cr>";
       options = {
