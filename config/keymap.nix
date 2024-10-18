@@ -155,4 +155,14 @@
       };
     }
   ];
+  extraConfigLua = ''
+    -- Function to copy a line and reset the cursor position
+    function _G.paste_and_reset_cursor()
+      local save_cursor = vim.fn.col('.')
+      vim.cmd('normal! ""p')
+      vim.fn.cursor(vim.fn.line('.'), save_cursor)
+    end
+    -- Map the function to the 'p' key in normal mode
+    vim.api.nvim_set_keymap('n', 'p', ':lua paste_and_reset_cursor()<CR>', { noremap = true, silent = true })
+  '';
 }
