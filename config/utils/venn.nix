@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   config = {
     extraPlugins = with pkgs.vimPlugins; [
       venn-nvim
@@ -28,4 +27,4 @@
       vim.api.nvim_set_keymap('n', '<leader>v', ":lua Toggle_venn()<CR>", { noremap = true})
     '';
   };
-} 
+}

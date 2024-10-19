@@ -15,10 +15,10 @@ vimUtils.buildVimPlugin rec {
   };
 
   meta = with lib; {
-    description = "";
-    homepage = "Neovim plugin for a code outline window";
+    description = "https://github.com/m-demare/hlargs.nvim";
+    homepage = "https://github.com/stevearc/aerial.nvim";
     maintainers = with maintainers; [];
-    mainProgram = "https://github.com/stevearc/aerial.nvim";
+    mainProgram = "aerial.nvim";
     platforms = platforms.all;
   };
 }
