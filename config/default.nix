@@ -47,6 +47,7 @@
     ./ui/nvimtree.nix
     ./ui/aerial.nix
     ./ui/lspkind.nix
+    ./ui/hlargs.nix
 
     ./utils/auto-session.nix
     ./utils/cursorline.nix
