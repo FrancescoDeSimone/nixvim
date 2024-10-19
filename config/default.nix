@@ -15,7 +15,7 @@
     ./git/diffview.nix
     ./git/git.nix
 
-    ./languages/clangd-extensions.nix # TODO pimp this plugin
+    ./languages/clangd-extensions.nix
     ./languages/go.nix
     ./languages/rust.nix
     ./languages/treesitter.nix
