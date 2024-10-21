@@ -1,5 +1,15 @@
-{
+{pkgs, ...}: {
   config = {
+    clipboard = {
+      # Use system clipboard
+      register = "unnamedplus";
+      providers = {
+        wl-copy = {
+          enable = true;
+          package = pkgs.wl-clipboard;
+        };
+      };
+    };
     luaLoader.enable = true;
     opts = {
       autoindent = true;
