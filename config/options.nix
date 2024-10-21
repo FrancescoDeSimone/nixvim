@@ -10,7 +10,26 @@
       signcolumn = "number";
       sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions";
       expandtab = true;
+      # Folding
+      foldlevel = 99; # Folds with a level higher than this number will be closed
       foldcolumn = "1";
+      foldenable = true;
+      foldlevelstart = -1;
+      fillchars = {
+        horiz = "━";
+        horizup = "┻";
+        horizdown = "┳";
+        vert = "┃";
+        vertleft = "┫";
+        vertright = "┣";
+        verthoriz = "╋";
+        eob = " ";
+        diff = "╱";
+        fold = " ";
+        foldopen = "";
+        foldclose = "";
+        msgsep = "‾";
+      };
       incsearch = true;
       undofile = true;
       showbreak = "↪\\";

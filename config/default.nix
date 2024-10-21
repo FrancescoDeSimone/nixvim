@@ -6,6 +6,7 @@
     ./options.nix
     ./autocmd.nix
     ./performance.nix
+    ./diagnostics.nix
 
     ./completion/cmp.nix
 
@@ -48,6 +49,7 @@
     ./ui/aerial.nix
     ./ui/lspkind.nix
     ./ui/hlargs.nix
+    ./ui/statuscol.nix
 
     ./utils/auto-session.nix
     ./utils/cursorline.nix
