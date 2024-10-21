@@ -12,9 +12,8 @@
         yamlls.enable = true;
         terraformls.enable = true;
         nil_ls.enable = true;
-
         rust_analyzer = {
-          enable = true;
+          enable = !config.plugins.rustaceanvim.enable;
           installCargo = false;
           installRustc = false;
           settings = {
