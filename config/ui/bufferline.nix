@@ -12,13 +12,45 @@
       ];
     };
   };
-  keymaps = [
+  keymaps = lib.mkIf config.plugins.bufferline.enable [
     {
-      key = "<leader>b";
-      action = ":BufferLinePick<cr>";
+      mode = "n";
+      key = "<leader>bP";
+      action = "<cmd>BufferLineTogglePin<cr>";
       options = {
-        silent = true;
-        desc = "Pick a buffer";
+        desc = "Pin buffer toggle";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>bp";
+      action = "<cmd>BufferLinePick<cr>";
+      options = {
+        desc = "Pick Buffer";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>bsd";
+      action = "<cmd>BufferLineSortByDirectory<cr>";
+      options = {
+        desc = "Sort By Directory";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>bse";
+      action = "<cmd>BufferLineSortByExtension<cr>";
+      options = {
+        desc = "Sort By Extension";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>bsr";
+      action = "<cmd>BufferLineSortByRelativeDirectory<cr>";
+      options = {
+        desc = "Sort By Relative Directory";
       };
     }
   ];
