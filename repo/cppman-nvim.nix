@@ -10,7 +10,7 @@ vimUtils.buildVimPlugin rec {
   src = fetchFromGitHub {
     owner = "madskjeldgaard";
     repo = "cppman.nvim";
-    hash = "";
+    hash = "sha256-4eV98VXjoQIuY4maekPGhlT6oq/GDflA3X/xxhSNqV8=";
     rev = "d52248494affdad266732a8601077ba0e9a337cc";
   };
 
