@@ -1,4 +1,4 @@
-{
+{config, ...}: {
   plugins.noice = {
     enable = true;
     cmdline = {
@@ -63,9 +63,9 @@
         view = "notify";
       };
       override = {
-        "cmp.entry.get_documentation" = false;
-        "vim.lsp.util.convert_input_to_markdown_lines" = false;
-        "vim.lsp.util.stylize_markdown" = false;
+        "cmp.entry.get_documentation" = true;
+        "vim.lsp.util.convert_input_to_markdown_lines" = true;
+        "vim.lsp.util.stylize_markdown" = true;
       };
       progress = {
         enabled = true;
@@ -97,6 +97,39 @@
         "|(%S-)|" = {__raw = "vim.cmd.help";};
       };
     };
+    routes = [
+      {
+        filter = {
+          event = "msg_show";
+          kind = "search_count";
+        };
+        opts = {
+          skip = true;
+        };
+      }
+      {
+        # skip progress messages from noisy servers
+        filter = {
+          event = "lsp";
+          kind = "progress";
+          cond.__raw = ''
+            function(message)
+              local client = vim.tbl_get(message.opts, 'progress', 'client')
+              local servers = { 'jdtls' }
+
+              for index, value in ipairs(servers) do
+                  if value == client then
+                      return true
+                  end
+              end
+            end
+          '';
+        };
+        opts = {
+          skip = true;
+        };
+      }
+    ];
     messages = {
       enabled = true;
       view = "notify";
