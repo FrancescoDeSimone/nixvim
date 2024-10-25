@@ -12,7 +12,21 @@
     };
     luaLoader.enable = true;
     opts = {
+      updatetime = 100; # Faster completion
+      hidden = true; # Keep closed buffer open in the background
       autoindent = true;
+      mouse = "a";
+      termguicolors = true; # Enables 24-bit RGB color in the |TUI|
+      modeline = true; # Tags such as 'vim:ft=sh'
+      modelines = 100; # Sets the type of modelines
+      preserveindent = true;
+      wrap = false;
+      pumheight = 10;
+      breakindent = true;
+      report = 9001; # disable "x more/fewer lines" messages
+      copyindent = true;
+      mousemodel = "extend"; # Mouse right-click extends the current selection
+      startofline = true; # motions like "G" also move to the first char
       cc = "80,120";
       cursorline = false;
       formatexpr = "v:lua.require'conform'.formatexpr()";
@@ -60,7 +74,6 @@
       synmaxcol = 125;
       tabstop = 2;
       ttyfast = true;
-      updatetime = 1000;
       wildignorecase = true;
       encoding = "utf-8";
       fileencoding = "utf-8";
