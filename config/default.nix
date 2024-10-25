@@ -10,7 +10,7 @@
 
     ./completion/cmp.nix
 
-    # ./dap/dap.nix #TODO fix this
+    ./dap/dap.nix #TODO fix this
 
     ./git/conflict-nvim.nix
     ./git/diffview.nix
