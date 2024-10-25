@@ -8,7 +8,6 @@
       };
       align = {};
       trailspace = {};
-      map = {window = {focusable = true;};};
       move = {
         mappings = {
           left = "<M-Left>";
@@ -16,7 +15,7 @@
           down = "<M-Down>";
           up = " <M-Up>";
           line_left = "<M-Left>";
-          line_right = " <M-Right>";
+          line_right = "<M-Right>";
           line_down = "<M-Down>";
           line_up = "<M-Up>";
         };

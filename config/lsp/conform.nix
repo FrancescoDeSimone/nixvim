@@ -1,12 +1,8 @@
-{pkgs, ...}: {
-  extraPackages = with pkgs; [
-    alejandra
-    black
-    google-java-format
-    prettierd
-    stylua
-    shellcheck
-  ];
+{
+  pkgs,
+  lib,
+  ...
+}: {
   plugins.conform-nvim = {
     enable = true;
     settings = {
@@ -14,17 +10,77 @@
       formatters_by_ft = {
         html = [["prettierd" "prettier"]];
         css = [["prettierd" "prettier"]];
-        sh = ["shellcheck"];
+        sh = [
+          "shellcheck"
+          "shellharden"
+          "shfmt"
+        ];
         javascript = [["prettierd" "prettier"]];
-        javascriptreact = [["prettierd" "prettier"]];
-        typescript = [["prettierd" "prettier"]];
-        typescriptreact = [["prettierd" "prettier"]];
-        java = ["google-java-format"];
+        terraform = ["terraform_fmt"];
+        yaml = ["yamlfmt"];
+        javascriptreact = [["prettierd"]];
+        typescript = [["prettierd"]];
+        typescriptreact = [["prettierd"]];
+        c = ["clang_format"];
+        cmake = ["cmake-format"];
+        cpp = ["clang_format"];
+        json = ["jq"];
         python = ["black"];
         lua = ["stylua"];
         nix = ["alejandra"];
-        markdown = [["prettierd" "prettier"]];
+        markdown = ["deno_fmt"];
         rust = ["rustfmt"];
+        toml = ["taplo"];
+      };
+      formatters = {
+        black = {
+          command = lib.getExe pkgs.black;
+        };
+        cmake-format = {
+          command = lib.getExe pkgs.cmake-format;
+        };
+        deno_fmt = {
+          command = lib.getExe pkgs.deno;
+        };
+        jq = {
+          command = lib.getExe pkgs.jq;
+        };
+        alejandra = {
+          command = lib.getExe pkgs.alejandra;
+        };
+        prettierd = {
+          command = lib.getExe pkgs.prettierd;
+        };
+        rustfmt = {
+          command = lib.getExe pkgs.rustfmt;
+        };
+        shellcheck = {
+          command = lib.getExe pkgs.shellcheck;
+        };
+        shfmt = {
+          command = lib.getExe pkgs.shfmt;
+        };
+        shellharden = {
+          command = lib.getExe pkgs.shellharden;
+        };
+        stylua = {
+          command = lib.getExe pkgs.stylua;
+        };
+        taplo = {
+          command = lib.getExe pkgs.taplo;
+        };
+        terraform_fmt = {
+          command = lib.getExe pkgs.terraform;
+        };
+        xmlformat = {
+          command = lib.getExe pkgs.xmlformat;
+        };
+        yamlfmt = {
+          command = lib.getExe pkgs.yamlfmt;
+        };
+        zigfmt = {
+          command = lib.getExe pkgs.zig;
+        };
       };
     };
   };
