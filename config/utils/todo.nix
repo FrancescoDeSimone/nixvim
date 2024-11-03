@@ -13,7 +13,6 @@
         keywords = [
           "TODO"
           "FIX"
-          "FIX"
         ];
       };
     };
