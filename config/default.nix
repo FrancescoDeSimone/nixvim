@@ -10,11 +10,14 @@
 
     ./completion/cmp.nix
 
-    #./dap/dap.nix #TODO fix this
+    ./dap/dap.nix #TODO fix this
 
     ./git/conflict-nvim.nix
     ./git/diffview.nix
-    ./git/git.nix
+    ./git/fugitive.nix
+    ./git/gitignore.nix
+    ./git/gitsigns.nix
+    ./git/neogit.nix
 
     ./languages/clangd-extensions.nix
     ./languages/go.nix
@@ -39,14 +42,13 @@
     ./ui/barbecue.nix
     ./ui/bufferline.nix
     ./ui/colorscheme.nix
-    ./ui/highlight-undo.nix
     ./ui/indent-blankline.nix
     ./ui/lualine.nix
     ./ui/noice.nix
     ./ui/notify.nix
     ./ui/nvim-colorizer.nix
     ./ui/nvimtree.nix
-    ./ui/aerial.nix
+    # ./ui/aerial.nix
     ./ui/lspkind.nix
     ./ui/hlargs.nix
     ./ui/statuscol.nix
@@ -72,5 +74,6 @@
     ./utils/whichkey.nix
     ./utils/obsidian.nix
     ./utils/cppman.nix
+    ./utils/refactoring.nix
   ];
 }

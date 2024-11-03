@@ -1,6 +1,9 @@
 {
+  config,
+  lib,
+  ...
+}: {
   plugins = {
-    fugitive.enable = true;
     gitsigns = {
       enable = true;
       settings = {
@@ -12,27 +15,8 @@
         # virt_text_pos = "eol";
       };
     };
-    gitignore = {
-      enable = true;
-    };
-    gitmessenger.enable = true;
-    neogit.enable = true;
   };
-  keymaps = [
-    {
-      mode = "n";
-      key = "<leader>gi";
-      action.__raw = ''require('gitignore').generate'';
-      options = {
-        desc = "Gitignore generate";
-        silent = true;
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>gg";
-      action = "<cmd>Neogit<CR>";
-    }
+  keymaps = lib.mkIf config.plugins.gitsigns.enable [
     {
       mode = ["n" "v"];
       key = "<leader>ghm";
@@ -44,7 +28,7 @@
     }
     {
       mode = "n";
-      key = "<leader>ghb";
+      key = "<leader>gb";
       action = ":Gitsigns blame_line<CR>";
       options = {
         silent = true;
@@ -53,7 +37,7 @@
     }
     {
       mode = "n";
-      key = "<leader>ghd";
+      key = "<leader>gd";
       action = ":Gitsigns diffthis<CR>";
       options = {
         silent = true;
