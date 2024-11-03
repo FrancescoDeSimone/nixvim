@@ -88,7 +88,7 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>cf";
+      key = "<leader>rf";
       action = "<cmd>lua require('conform').format()<cr>";
       options = {
         silent = true;
@@ -98,7 +98,7 @@
 
     {
       mode = "v";
-      key = "<leader>cF";
+      key = "<leader>rF";
       action = "<cmd>lua require('conform').format()<cr>";
       options = {
         silent = true;

@@ -7,16 +7,24 @@
     extraConfigLua = ''
       local cppman = require"cppman"
       cppman.setup()
-
-      -- Make a keymap to open the word under cursor in CPPman
-      vim.keymap.set("n", "<leader>cm", function()
-      	cppman.open_cppman_for(vim.fn.expand("<cword>"))
-      end)
-
-      -- Open search box
-      vim.keymap.set("n", "<leader>cc", function()
-      	cppman.input()
-      end)
     '';
+    keymaps = [
+      {
+        key = "<leader>cm";
+        action = ":lua require('cppman').open_cppman_for(vim.fn.expand('<cword>'))<CR>";
+        options = {
+          silent = true;
+          desc = "CPPMAN: open Word Under Cursor";
+        };
+      }
+      {
+        key = "<leader>cc";
+        action = ":lua require('cppman').input()<CR>";
+        options = {
+          silent = true;
+          desc = "CPPMAN: open search box";
+        };
+      }
+    ];
   };
 }

@@ -8,11 +8,19 @@
       action = ":";
     }
     {
+      key = "<leader>rw";
+      action = ":s/\\v(.{80})/\\1\\r/g<CR>";
+      options = {
+        silent = true;
+        desc = "Wrap after 80";
+      };
+    }
+    {
       key = "<leader>.";
       action = ":%s/<C-r><C-w>/<C-r><C-w>/gI<Left><Left><Left>";
       options = {
         silent = false;
-        desc = "Search And Replace The Word Under The Cursor";
+        desc = "Find/Replace under cursor";
       };
     }
     {
@@ -32,14 +40,6 @@
       };
     }
     {
-      key = "<leader>ca";
-      action = ":%bd|e#<cr>";
-      options = {
-        silent = true;
-        desc = "Close all buffers except current";
-      };
-    }
-    {
       mode = "t";
       key = "<Esc>";
       action = "<C-\\><C-n>";
@@ -48,14 +48,13 @@
         desc = "Escape terminal mode";
       };
     }
-
     {
       mode = "n";
       action = "v<Up>";
       key = "<S-Up>";
       options = {
         silent = true;
-        desc = "Shift+Up: Select lines above";
+        desc = "Select lines above";
       };
     }
     {
@@ -64,7 +63,7 @@
       key = "<S-Down>";
       options = {
         silent = true;
-        desc = "Shift+Down: Select lines below";
+        desc = "Select lines below";
       };
     }
     {
@@ -73,7 +72,7 @@
       key = "<S-Left>";
       options = {
         silent = true;
-        desc = "Shift+Left: Select characters to the left";
+        desc = "Select characters to the left";
       };
     }
     {
@@ -82,7 +81,7 @@
       key = "<S-Right>";
       options = {
         silent = true;
-        desc = "Shift+Right: Select characters to the right";
+        desc = "Select characters to the right";
       };
     }
     {
@@ -91,7 +90,7 @@
       key = "<S-Up>";
       options = {
         silent = true;
-        desc = "Shift+Up: Move selection up";
+        desc = "Move selection up";
       };
     }
     {
@@ -100,7 +99,7 @@
       key = "<S-Down>";
       options = {
         silent = true;
-        desc = "Shift+Down: Move selection down";
+        desc = "Move selection down";
       };
     }
     {
@@ -109,7 +108,7 @@
       key = "<S-Left>";
       options = {
         silent = true;
-        desc = "Shift+Left: Move selection left";
+        desc = "Move selection left";
       };
     }
     {
@@ -118,7 +117,7 @@
       key = "<S-Right>";
       options = {
         silent = true;
-        desc = "Shift+Right: Move selection right";
+        desc = "Move selection right";
       };
     }
     {
@@ -127,7 +126,7 @@
       key = "<S-Up>";
       options = {
         silent = true;
-        desc = "Shift+Up: Exit insert mode and select lines above";
+        desc = "Exit insert mode and select lines above";
       };
     }
     {
@@ -136,7 +135,7 @@
       key = "<S-Down>";
       options = {
         silent = true;
-        desc = "Shift+Down: Exit insert mode and select lines below";
+        desc = "Exit insert mode and select lines below";
       };
     }
     {
@@ -145,7 +144,7 @@
       key = "<S-Left>";
       options = {
         silent = true;
-        desc = "Shift+Left: Exit insert mode and select characters to the left";
+        desc = "Exit insert mode and select characters to the left";
       };
     }
     {
@@ -154,18 +153,8 @@
       key = "<S-Right>";
       options = {
         silent = true;
-        desc = "Shift+Right: Exit insert mode and select characters to the right";
+        desc = "Exit insert mode and select characters to the right";
       };
     }
   ];
-  extraConfigLua = ''
-    -- Function to copy a line and reset the cursor position
-    function _G.paste_and_reset_cursor()
-      local save_cursor = vim.fn.col('.')
-      vim.cmd('normal! ""p')
-      vim.fn.cursor(vim.fn.line('.'), save_cursor)
-    end
-    -- Map the function to the 'p' key in normal mode
-    vim.api.nvim_set_keymap('n', 'p', ':lua paste_and_reset_cursor()<CR>', { noremap = true, silent = true })
-  '';
 }

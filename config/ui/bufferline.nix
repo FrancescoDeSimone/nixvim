@@ -49,6 +49,14 @@
       };
     }
     {
+      key = "<leader>bc";
+      action = ":%bd|e#<cr>";
+      options = {
+        silent = true;
+        desc = "Close all buffers except current";
+      };
+    }
+    {
       mode = "n";
       key = "<leader>bsd";
       action = "<cmd>BufferLineSortByDirectory<cr>";

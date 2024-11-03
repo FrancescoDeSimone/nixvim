@@ -131,7 +131,7 @@
 
     {
       mode = "n";
-      key = "<leader>cr";
+      key = "<leader>rr";
       action = "<cmd>Lspsaga rename<CR>";
       options = {
         desc = "Rename";
@@ -151,7 +151,7 @@
 
     {
       mode = "n";
-      key = "<leader>cd";
+      key = "<A-t>";
       action = "<cmd>Lspsaga show_line_diagnostics<CR>";
       options = {
         desc = "Line Diagnostics";

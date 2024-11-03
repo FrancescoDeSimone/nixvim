@@ -6,16 +6,17 @@
       indent.enable = true;
       highlight.enable = true;
       highlight.disable = ["make"];
+      incremental_selection = {
+        enable = true;
+        keymaps = {
+          init_selection = "<leader>ss";
+          node_decremental = "<leader>si";
+          node_incremental = "<leader>sc";
+          scope_incremental = "<leader>sd";
+        };
+      };
     };
-    # incrementalSelection.enable = true;
     nixvimInjections = true;
-    # not using norg anymore
-    # grammarPackages = with pkgs.tree-sitter-grammars;
-    #   [
-    #     tree-sitter-norg
-    #     tree-sitter-norg-meta
-    #   ]
-    #   ++ pkgs.vimPlugins.nvim-treesitter.allGrammars;
   };
   plugins.treesitter-refactor.enable = true;
   # plugins.treesitter-context.enable = true;
@@ -58,10 +59,10 @@
         "[]" = "@class.outer";
       };
     };
-    swap = {
-      enable = true;
-      swapNext = {"<leader>a" = "@parameters.inner";};
-      swapPrevious = {"<leader>A" = "@parameter.outer";};
-    };
+    # swap = {
+    #   enable = true;
+    #   swapNext = {"<leader>a" = "@parameters.inner";};
+    #   swapPrevious = {"<leader>A" = "@parameter.outer";};
+    # };
   };
 }
