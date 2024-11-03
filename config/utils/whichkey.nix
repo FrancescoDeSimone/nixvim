@@ -21,14 +21,14 @@
           __unkeyed = "<leader>f";
           group = "Find";
         }
-        # {
-        #   __unkeyed = "<leader>r";
-        #   group = "Refactor";
-        #   icon = " ";
-        # }
+        {
+          __unkeyed = "<leader>r";
+          group = "Refactor";
+          icon = " ";
+        }
         {
           __unkeyed = "<leader>t";
-          group = "Terminal";
+          group = "Toggle";
         }
         {
           __unkeyed = "<leader>u";
