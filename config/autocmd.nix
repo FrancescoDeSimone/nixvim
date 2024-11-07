@@ -1,4 +1,8 @@
 {
+  opts,
+  helpers,
+  ...
+}: {
   config = {
     autoCmd = [
       {
@@ -24,8 +28,21 @@
       }
       {
         event = ["CursorHold"];
-        pattern = ["*"];
-        command = ":lua vim.diagnostic.open_float(nil, {focus=false})";
+        desc = "lsp show diagnostics on CursorHold";
+        callback =
+          helpers.mkRaw #lua
+
+          ''
+            function()
+             local hover_opts = {
+                focusable = false,
+                close_events = { "BufLeave", "CursorMoved", "InsertEnter", "FocusLost" },
+                border = "rounded",
+                source = "always",
+              }
+              vim.diagnostic.open_float(nil, hover_opts)
+            end
+          '';
       }
       {
         event = ["VimResized"];
