@@ -55,6 +55,7 @@
     ./ui/lspkind.nix
     ./ui/hlargs.nix
     ./ui/statuscol.nix
+    ./ui/nvim-scrollbar.nix
 
     ./utils/auto-session.nix
     ./utils/cursorline.nix
