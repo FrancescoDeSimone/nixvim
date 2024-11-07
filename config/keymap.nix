@@ -1,11 +1,16 @@
 {
-  extraConfigLuaPre = ''
-    function bool2str(bool) return bool and "on" or "off" end
-  '';
   keymaps = [
     {
       key = ";";
       action = ":";
+    }
+    {
+      key = "<leader>ui";
+      action = ":lua toggleInlay()<CR>";
+      options = {
+        silent = true;
+        desc = "Toggle Inlay Hints";
+      };
     }
     {
       key = "<leader>rw";
