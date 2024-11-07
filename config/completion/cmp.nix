@@ -1,115 +1,116 @@
-{
+_: let
+  get_bufnrs.__raw = ''
+    function()
+      local buf_size_limit = 1024 * 1024 -- 1MB size limit
+      local bufs = vim.api.nvim_list_bufs()
+      local valid_bufs = {}
+      for _, buf in ipairs(bufs) do
+        if vim.api.nvim_buf_is_loaded(buf) and vim.api.nvim_buf_get_offset(buf, vim.api.nvim_buf_line_count(buf)) < buf_size_limit then
+          table.insert(valid_bufs, buf)
+        end
+      end
+      return valid_bufs
+    end
+  '';
+in {
+  opts.completeopt = [
+    "menu"
+    "menuone"
+    "noselect"
+  ];
+
   plugins = {
+    cmp-nvim-lsp-signature-help.enable = true;
+    cmp-nvim-lsp.enable = true;
+    cmp-buffer.enable = true;
+    cmp-path.enable = true;
+    cmp_luasnip.enable = true;
+    cmp-cmdline.enable = true;
+    # cmp-nvim-ultisnips.enable = true;
     cmp = {
       enable = true;
       autoEnableSources = true;
       settings = {
-        completion.completeopt = "noselect";
-        preselect = "None";
-        experimental = {
-          ghost_text = true;
-        };
-        window = {
-          completion = {
-            border = ["╭" "─" "╮" "│" "╯" "─" "╰" "│"];
-            #border = "rounded";
-            winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:Visual,Search:None";
-          };
-          documentation = {
-            border = ["╭" "─" "╮" "│" "╯" "─" "╰" "│"];
-          };
-        };
-        sources = [
-          {name = "nvim_lsp";}
-          {name = "luasnip";}
-          {name = "path";}
-          {name = "buffer";}
-        ];
-        performance = {
-          debounce = 60;
-          fetching_timeout = 200;
-          max_view_entries = 30;
-        };
-        formatting = {
-          fields = ["kind" "abbr" "menu"];
-          expandable_indicator = true;
-        };
-        snippet.expand = ''
-          function(args)
-            require('luasnip').lsp_expand(args.body)
-          end
-        '';
+        experimental = {ghost_text = true;};
         mapping = {
-          "<C-Space>" = "cmp.mapping.complete()";
-          "<C-d>" = "cmp.mapping.scroll_docs(-4)";
-          "<C-e>" = "cmp.mapping.close()";
-          "<C-f>" = "cmp.mapping.scroll_docs(4)";
-          "<CR>" = "cmp.mapping.confirm({ select = true })";
-          "<Tab>" = "cmp.mapping.confirm({ select = true })";
-          "<C-UP>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
-          "<C-Down>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+          "<C-d>" =
+            # Lua
+            "cmp.mapping.scroll_docs(-4)";
+          "<C-f>" =
+            # Lua
+            "cmp.mapping.scroll_docs(4)";
+          "<C-Space>" =
+            # Lua
+            "cmp.mapping.complete()";
+          "<C-e>" =
+            # Lua
+            "cmp.mapping.close()";
+          "<Down>" =
+            # Lua
+            "cmp.mapping(cmp.mapping.select_next_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
+          "<Tab>" =
+            # Lua
+            "cmp.mapping(cmp.mapping.select_next_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
+          "<Up>" =
+            # Lua
+            "cmp.mapping(cmp.mapping.select_prev_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
+          "<C-Tab>" =
+            # Lua
+            "cmp.mapping(cmp.mapping.select_prev_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
+          "<CR>" =
+            # Lua
+            "cmp.mapping.confirm({ select = false, behavior = cmp.ConfirmBehavior.Replace })";
+        };
+
+        snippet.expand =
+          # Lua
+          "function(args) require('luasnip').lsp_expand(args.body) end";
+
+        sources = [
+          {
+            name = "nvim_lsp";
+            priority = 1000;
+            option = {
+              inherit get_bufnrs;
+            };
+          }
+          {
+            name = "nvim_lsp_signature_help";
+            priority = 1000;
+            option = {
+              inherit get_bufnrs;
+            };
+          }
+          {
+            name = "nvim_lsp_document_symbol";
+            priority = 1000;
+            option = {
+              inherit get_bufnrs;
+            };
+          }
+          {
+            name = "luasnip";
+            priority = 750;
+          }
+          {
+            name = "buffer";
+            priority = 500;
+            option = {
+              inherit get_bufnrs;
+            };
+          }
+          {
+            name = "path";
+            priority = 300;
+          }
+        ];
+
+        window = {
+          completion.scrollbar = false;
+          completion.__raw = ''cmp.config.window.bordered()'';
+          documentation.__raw = ''cmp.config.window.bordered()'';
         };
       };
     };
-    cmp-buffer.enable = true;
-    cmp-nvim-lsp-signature-help.enable = true;
-    cmp-nvim-lsp.enable = true;
-    cmp-path.enable = true;
-    cmp_luasnip.enable = true;
   };
-  extraConfigLua = ''
-      luasnip = require("luasnip")
-      kind_icons = {
-        Text = "󰊄",
-        Method = "",
-        Function = "󰡱",
-        Constructor = "",
-        Field = "",
-        Variable = "󱀍",
-        Class = "",
-        Interface = "",
-        Module = "󰕳",
-        Property = "",
-        Unit = "",
-        Value = "",
-        Enum = "",
-        Keyword = "",
-        Snippet = "",
-        Color = "",
-        File = "",
-        Reference = "",
-        Folder = "",
-        EnumMember = "",
-        Constant = "",
-        Struct = "",
-        Event = "",
-        Operator = "",
-        TypeParameter = "",
-      }
-    local cmp = require'cmp'
-
-      -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
-      cmp.setup.cmdline({'/', "?" }, {
-          sources = {
-          { name = 'buffer' }
-          }
-          })
-
-    -- Set configuration for specific filetype.
-      cmp.setup.filetype('gitcommit', {
-          sources = cmp.config.sources({
-              { name = 'cmp_git' }, -- You can specify the `cmp_git` source if you were installed it.
-              }, {
-              { name = 'buffer' },
-              })
-          })
-
-    -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
-      cmp.setup.cmdline(':', {
-          sources = cmp.config.sources({
-              { name = 'path' }
-              }, {
-              { name = 'cmdline' }
-              }),
-          })  '';
 }

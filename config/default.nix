@@ -1,6 +1,7 @@
 {
   # Import all your configuration modules here
   imports = [
+    ./extraLuaConfig.nix
     ./globals.nix
     ./keymap.nix
     ./options.nix
@@ -8,7 +9,9 @@
     ./performance.nix
     ./diagnostics.nix
 
+    #./completion/coq.nix
     ./completion/cmp.nix
+    # ./completion/blink-cmp.nix
 
     ./dap/dap.nix #TODO fix this
 
@@ -35,7 +38,7 @@
 
     ./snippets/luasnip.nix
 
-    #./telescope/telescope-dap-nvim.nix #TODO fix this
+    ./telescope/telescope-dap-nvim.nix #TODO fix this
     ./telescope/telescope.nix
     ./telescope/yanky.nix
 
