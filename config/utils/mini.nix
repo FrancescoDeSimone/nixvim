@@ -3,6 +3,7 @@
     enable = true;
     mockDevIcons = true;
     modules = {
+      # completion = {};
       icons = {
         style = "glyph";
       };
