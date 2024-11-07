@@ -26,7 +26,6 @@ in {
     cmp-path.enable = true;
     cmp_luasnip.enable = true;
     cmp-cmdline.enable = true;
-    # cmp-nvim-ultisnips.enable = true;
     cmp = {
       enable = true;
       autoEnableSources = true;
