@@ -99,45 +99,14 @@
         };
       };
       routes = [
-        {
-          filter = {
-            event = "msg_show";
-            kind = "search_count";
-          };
-          opts = {
-            skip = true;
-          };
-        }
-        {
-          # skip progress messages from noisy servers
-          filter = {
-            event = "lsp";
-            kind = "progress";
-            cond.__raw = ''
-              function(message)
-                local client = vim.tbl_get(message.opts, 'progress', 'client')
-                local servers = { 'jdtls' }
-
-                for index, value in ipairs(servers) do
-                    if value == client then
-                        return true
-                    end
-                end
-              end
-            '';
-          };
-          opts = {
-            skip = true;
-          };
-        }
       ];
       messages = {
         enabled = true;
         view = "notify";
-        viewError = "notify";
-        viewHistory = "messages";
-        viewSearch = "virtualtext";
-        viewWarn = "notify";
+        view_error = "notify";
+        view_history = "messages";
+        view_search = "virtualtext";
+        view_warn = "notify";
       };
       notify = {
         enabled = true;
