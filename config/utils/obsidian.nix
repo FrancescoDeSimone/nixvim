@@ -1,11 +1,11 @@
-{
+{config, ...}: {
   plugins.obsidian = {
     enable = true;
     settings = {
       ui.enable = false; # required by render-markdown
       completion = {
         min_chars = 2;
-        nvim_cmp = true;
+        nvim_cmp = config.plugins.cmp.enable;
       };
       new_notes_location = "notes_subdir";
       workspaces = [

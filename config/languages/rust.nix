@@ -17,6 +17,7 @@
         server = {
           default_settings = {
             rust-analyzer = {
+              completion.fullFunctionSignatures.enable = true;
               cargo = {
                 buildScripts.enable = true;
                 features = "all";

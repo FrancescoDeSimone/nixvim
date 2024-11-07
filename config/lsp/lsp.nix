@@ -1,6 +1,29 @@
 {config, ...}: {
   plugins = {
     lsp = {
+      onAttach =
+        # lua
+        ''
+          -- Helper function to set key mappings more easily
+          local function buf_set_keymap(mode, lhs, rhs, opts)
+            opts = vim.tbl_extend("force", { noremap = true, silent = true, buffer = bufnr }, opts or {})
+            vim.keymap.set(mode, lhs, rhs, opts)
+          end
+
+          buf_set_keymap("n", "<leader>ll", toggleVirtualText, { desc = "Toggle Ghost Lsp" })
+
+          buf_set_keymap("n", "<leader>lL",
+            function()
+              if vim.g.diagnostics_visible then
+                vim.g.diagnostics_visible = false
+                vim.diagnostic.disable()
+              else
+                vim.g.diagnostics_visible = true
+                vim.diagnostic.enable()
+              end
+              end, { desc = "Toggle Diagnostics" })
+        '';
+
       enable = true;
       servers = {
         ast_grep.enable = true;
