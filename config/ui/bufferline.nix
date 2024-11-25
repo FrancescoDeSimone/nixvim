@@ -50,8 +50,15 @@
     }
     {
       key = "<leader>bc";
-      action = ":lua Snacks.bufdelete.all()";
-      # action = ":%bd|e#<cr>";
+      action = ":lua Snacks.bufdelete.other()<cr>";
+      options = {
+        silent = true;
+        desc = "Close all buffers except current";
+      };
+    }
+    {
+      key = "<leader>ba";
+      action = ":lua Snacks.bufdelete.all()<cr>";
       options = {
         silent = true;
         desc = "Close all buffers except current";

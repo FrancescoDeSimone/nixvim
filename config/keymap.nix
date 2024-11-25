@@ -38,7 +38,7 @@
     }
     {
       key = "<leader>q";
-      action = ":Bdelete<cr>";
+      action = ":lua Snacks.bufdelete.delete()<cr>";
       options = {
         silent = true;
         desc = "Close buffer";
