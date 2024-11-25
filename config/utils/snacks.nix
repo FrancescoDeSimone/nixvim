@@ -1,0 +1,5 @@
+{
+  plugins.snacks = {
+    enable = true;
+  };
+}
