@@ -1,12 +1,13 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   config = {
     extraPlugins = with pkgs.vimPlugins; [
       nui-nvim
-      (pkgs.callPackage ../../repo/leetcode.nix { })
-
+      (pkgs.callPackage ../../repo/leetcode.nix {})
     ];
     extraConfigLua = ''
-      require('leetcode').setup()
+      require('leetcode').setup({
+        image_support = true,
+      })
     '';
   };
 }

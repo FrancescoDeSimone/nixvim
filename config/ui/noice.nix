@@ -1,4 +1,8 @@
-{config, ...}: {
+{
+  config,
+  pkgs,
+  ...
+}: {
   plugins.noice = {
     enable = true;
     settings = {
@@ -49,6 +53,10 @@
             render = "plain";
             replace = true;
             win_options = {
+              winhighlight = {
+                Normal = "NormalFloat";
+                FloatBorder = "FloatBorder";
+              };
               concealcursor = "n";
               conceallevel = 3;
             };
@@ -99,6 +107,13 @@
         };
       };
       routes = [
+        {
+          view = "split";
+          filter = {
+            event = "msg_show";
+            min_height = 20;
+          };
+        }
       ];
       messages = {
         enabled = true;
