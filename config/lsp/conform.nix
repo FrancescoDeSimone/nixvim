@@ -31,6 +31,11 @@
         markdown = ["deno_fmt"];
         rust = ["rustfmt"];
         toml = ["taplo"];
+        "_" = [
+          "squeeze_blanks"
+          "trim_whitespace"
+          "trim_newlines"
+        ];
       };
       formatters = {
         black = {
@@ -59,6 +64,9 @@
         };
         shfmt = {
           command = lib.getExe pkgs.shfmt;
+        };
+        squeeze_blanks = {
+          command = lib.getExe' pkgs.coreutils "cat";
         };
         shellharden = {
           command = lib.getExe pkgs.shellharden;
@@ -95,14 +103,13 @@
         desc = "Format Buffer";
       };
     }
-
     {
-      mode = "v";
-      key = "<leader>rF";
-      action = "<cmd>lua require('conform').format()<cr>";
+      mode = "n";
+      key = "<leader>tf";
+      action = ":FormatToggle<CR>";
       options = {
         silent = true;
-        desc = "Format Lines";
+        desc = "Toggle format";
       };
     }
   ];
