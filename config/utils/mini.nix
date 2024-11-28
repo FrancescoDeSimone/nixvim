@@ -4,6 +4,8 @@
     mockDevIcons = true;
     modules = {
       # completion = {};
+      operators = {};
+      cursorword = {};
       icons = {
         style = "glyph";
       };
@@ -22,7 +24,6 @@
         };
       };
       misc = {};
-      trailspace = {};
     };
   };
   keymaps = [
