@@ -12,7 +12,7 @@
       };
     }
     {
-      key = "<leader>ts";
+      key = "<leader>us";
       action = ":Trouble symbols toggle focus=false<cr>";
       options = {
         silent = true;

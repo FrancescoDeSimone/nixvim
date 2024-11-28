@@ -61,7 +61,7 @@
       action = ":lua Snacks.bufdelete.all()<cr>";
       options = {
         silent = true;
-        desc = "Close all buffers except current";
+        desc = "Close all buffers";
       };
     }
     {

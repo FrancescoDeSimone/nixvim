@@ -58,7 +58,7 @@
         action = "git_files";
         options.desc = "Search git files";
       };
-      "<leader>gc" = {
+      "<leader>sc" = {
         action = "git_commits";
         options.desc = "Commits";
       };
@@ -109,15 +109,6 @@
       options = {
         silent = true;
         desc = "Telescope jumplist";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>st";
-      action = "<cmd>TodoTelescope<cr>";
-      options = {
-        silent = true;
-        desc = "Todo (Telescope)";
       };
     }
   ];
