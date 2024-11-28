@@ -13,14 +13,14 @@
     ./completion/cmp.nix
     # ./completion/blink-cmp.nix
 
-    ./dap/dap.nix #TODO fix this
+    ./dap/dap.nix #TODO: fix this
 
     ./git/conflict-nvim.nix
     ./git/diffview.nix
     ./git/fugitive.nix
     ./git/gitignore.nix
     ./git/gitsigns.nix
-    ./git/neogit.nix
+    ./git/keymap.nix
 
     ./languages/clangd-extensions.nix
     ./languages/go.nix
@@ -38,7 +38,7 @@
 
     ./snippets/luasnip.nix
 
-    ./telescope/telescope-dap-nvim.nix #TODO fix this
+    ./telescope/telescope-dap-nvim.nix #TODO: fix this
     ./telescope/telescope.nix
     ./telescope/yanky.nix
 
@@ -51,22 +51,17 @@
     ./ui/notify.nix
     ./ui/nvim-colorizer.nix
     ./ui/nvimtree.nix
-    # ./ui/aerial.nix
     ./ui/lspkind.nix
     ./ui/hlargs.nix
     ./ui/statuscol.nix
     ./ui/image.nix
-    # ./ui/nvim-scrollbar.nix
 
-    ./utils/auto-session.nix
-    ./utils/cursorline.nix
+    # ./utils/auto-session.nix
     ./utils/debugprint.nix
-    # ./utils/harpoon.nix
     ./utils/hmts.nix
     ./utils/leetcode.nix
     ./utils/markdown.nix
     ./utils/mini.nix
-    # ./utils/neogen.nix
     ./utils/grug-far.nix
     ./utils/oil.nix
     ./utils/ollama.nix
