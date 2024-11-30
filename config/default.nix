@@ -13,7 +13,7 @@
     ./completion/cmp.nix
     # ./completion/blink-cmp.nix
 
-    ./dap/dap.nix #TODO: fix this
+    # ./dap/dap.nix #TODO: fix this
 
     ./git/conflict-nvim.nix
     ./git/diffview.nix
@@ -38,7 +38,7 @@
 
     ./snippets/luasnip.nix
 
-    ./telescope/telescope-dap-nvim.nix #TODO: fix this
+    # ./telescope/telescope-dap-nvim.nix #TODO: fix this
     ./telescope/telescope.nix
     ./telescope/yanky.nix
 
@@ -67,7 +67,6 @@
     ./utils/ollama.nix
     ./utils/todo.nix
     ./utils/venn.nix
-    ./utils/vim-bbye.nix
     ./utils/vim-matchup.nix
     ./utils/vim-visual-multi.nix
     ./utils/vimtex.nix

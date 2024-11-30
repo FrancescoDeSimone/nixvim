@@ -15,4 +15,15 @@
       };
     };
   };
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>tt";
+      action = ":lua Snacks.terminal()<CR>";
+      options = {
+        desc = "Toggle Terminal";
+        silent = true;
+      };
+    }
+  ];
 }
