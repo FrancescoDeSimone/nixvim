@@ -50,7 +50,7 @@
     ./ui/noice.nix
     ./ui/notify.nix
     ./ui/nvim-colorizer.nix
-    ./ui/nvimtree.nix
+    # ./ui/nvimtree.nix
     ./ui/lspkind.nix
     ./ui/hlargs.nix
     ./ui/statuscol.nix
