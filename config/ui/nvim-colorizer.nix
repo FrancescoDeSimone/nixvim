@@ -3,7 +3,7 @@
   lib,
   ...
 }: {
-  plugins.nvim-colorizer.enable = true;
+  plugins.colorizer.enable = true;
   keymaps = lib.mkIf config.plugins.nvim-colorizer.enable [
     {
       mode = "n";
