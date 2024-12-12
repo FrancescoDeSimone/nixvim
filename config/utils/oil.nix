@@ -48,17 +48,17 @@
       {
         mode = "n";
         key = "-";
-        action =
-          helpers.mkRaw #lua
-
-          ''
-            function()
-              vim.cmd("split | wincmd l")
-              require("oil").open()
-            end
-          '';
+        action = ":Oil<CR>";
+        # helpers.mkRaw #lua
+        #
+        # ''
+        #   function()
+        #     vim.cmd("split | wincmd l")
+        #     require("oil").open()
+        #   end
+        # '';
         options = {
-          desc = "Toggle orizontal split oil";
+          desc = "Toggle oil";
           silent = true;
         };
       }
