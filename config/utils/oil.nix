@@ -20,15 +20,13 @@
       ];
       experimental_watch_for_changes = true;
       keymaps = {
-        "<C-c>" = false;
-        "<C-l>" = false;
         "<C-r>" = "actions.refresh";
         "<leader>qq" = "actions.close";
         "y." = "actions.copy_entry_path";
       };
       skip_confirm_for_simple_edits = true;
       view_options = {
-        show_hidden = false;
+        show_hidden = true;
       };
       win_options = {
         winbar = "%{v:lua.require('oil').get_current_dir()}";
@@ -49,14 +47,6 @@
         mode = "n";
         key = "-";
         action = ":Oil<CR>";
-        # helpers.mkRaw #lua
-        #
-        # ''
-        #   function()
-        #     vim.cmd("split | wincmd l")
-        #     require("oil").open()
-        #   end
-        # '';
         options = {
           desc = "Toggle oil";
           silent = true;
