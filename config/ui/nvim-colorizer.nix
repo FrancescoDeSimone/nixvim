@@ -4,7 +4,7 @@
   ...
 }: {
   plugins.colorizer.enable = true;
-  keymaps = lib.mkIf config.plugins.nvim-colorizer.enable [
+  keymaps = lib.mkIf config.plugins.colorizer.enable [
     {
       mode = "n";
       key = "<leader>uC";
