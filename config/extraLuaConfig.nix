@@ -38,9 +38,6 @@
         return false
       end
     end
-
-
-    vim.lsp.inlay_hint.enable(true)
   '';
 
   extraConfigLua = ''
@@ -55,5 +52,8 @@
       update_in_insert = false,
       virtual_text = false,
     })
+  '';
+  extraConfigLuaPost = ''
+    vim.lsp.codelens.refresh()
   '';
 }
