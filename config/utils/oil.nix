@@ -53,23 +53,5 @@
         };
       }
     ]
-    (lib.mkIf (!config.plugins.nvim-tree.enable) [
-      {
-        key = "<leader>e";
-        action =
-          helpers.mkRaw #lua
-
-          ''
-            function()
-              vim.cmd("vsplit | wincmd l")
-              require("oil").open()
-            end
-          '';
-        options = {
-          silent = true;
-          desc = "Toggle vertical split oil";
-        };
-      }
-    ])
   ];
 }

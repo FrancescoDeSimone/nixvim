@@ -50,11 +50,11 @@
     ./ui/noice.nix
     ./ui/notify.nix
     ./ui/nvim-colorizer.nix
-    # ./ui/nvimtree.nix
     ./ui/lspkind.nix
     ./ui/hlargs.nix
     ./ui/statuscol.nix
     ./ui/image.nix
+    ./ui/nvim-ide.nix
 
     # ./utils/auto-session.nix
     ./utils/debugprint.nix

@@ -24,10 +24,18 @@
           end
         '';
       offsets = [
-        {filetype = "NvimTree";}
-        {text = "File Explorer";}
-        {highlight = "Directory";}
-        {separator = true;}
+        {
+          filetype = "NvimTree";
+          text = "File Explorer";
+          highlight = "Directory";
+          separator = true;
+        }
+        {
+          filetype = "filetree";
+          text = "";
+          highlight = "Explorer";
+          text_align = "left";
+        }
       ];
     };
   };

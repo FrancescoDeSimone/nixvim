@@ -8,6 +8,7 @@
             "aerial"
             "dap-repl"
             "NvimTree"
+            "filetree"
           ];
         };
       };
