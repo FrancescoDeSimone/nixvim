@@ -10,7 +10,7 @@
       modeline = true; # Tags such as 'vim:ft=sh'
       modelines = 100; # Sets the type of modelines
       preserveindent = true;
-      wrap = false;
+      wrap = true;
       pumheight = 10;
       breakindent = true;
       report = 9001; # disable "x more/fewer lines" messages
@@ -56,7 +56,6 @@
       shiftwidth = 2;
       ignorecase = true;
       smartcase = true;
-      spell = true;
       splitbelow = true;
       inccommand = "split";
       splitright = true;
