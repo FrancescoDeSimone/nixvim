@@ -5,8 +5,7 @@
       (pkgs.callPackage ../../repo/cppman-nvim.nix {})
     ];
     extraConfigLua = ''
-      local cppman = require"cppman"
-      cppman.setup()
+      require("cppman").setup()
     '';
     keymaps = [
       {
