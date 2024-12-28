@@ -1,8 +1,13 @@
-{pkgs, ...}: {
+{pkgs, ...}: let
+  cppman = (pkgs.callPackage ../../repo/cppman-nvim.nix {}).overrideAttrs {
+    dependencies = with pkgs.vimPlugins; [
+      nui-nvim
+    ];
+  };
+in {
   config = {
-    extraPlugins = with pkgs; [
-      vimPlugins.nui-nvim
-      (pkgs.callPackage ../../repo/cppman-nvim.nix {})
+    extraPlugins = [
+      cppman
     ];
     extraConfigLua = ''
       require("cppman").setup()

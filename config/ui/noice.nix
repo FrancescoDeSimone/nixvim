@@ -1,8 +1,8 @@
-{
-  config,
-  pkgs,
-  ...
-}: {
+{config, ...}: {
+  plugins.nui = {
+    enable = true;
+    autoLoad = true;
+  };
   plugins.noice = {
     enable = true;
     settings = {

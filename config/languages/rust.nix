@@ -7,7 +7,7 @@
   extraPlugins = with pkgs.vimPlugins; [webapi-vim];
   plugins = {
     rust-tools.enable = !config.plugins.rustaceanvim.enable;
-    crates-nvim = {enable = true;};
+    crates = {enable = true;};
     rustaceanvim = {
       enable = true;
       settings = {
