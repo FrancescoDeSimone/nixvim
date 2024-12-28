@@ -15,7 +15,6 @@
       breakindent = true;
       report = 9001; # disable "x more/fewer lines" messages
       copyindent = true;
-      mousemodel = "extend"; # Mouse right-click extends the current selection
       startofline = true; # motions like "G" also move to the first char
       cc = "80,120";
       cursorline = false;
