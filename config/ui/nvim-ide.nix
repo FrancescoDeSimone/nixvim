@@ -29,7 +29,7 @@
           git = { changes.Name, commits.Name, timeline.Name, branches.Name }
       },
       workspaces = {
-          auto_open = 'left',
+          auto_open = 'none',
           on_quit = "close"
       },
       panel_sizes = {
