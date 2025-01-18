@@ -1,0 +1,3 @@
+{
+  plugins.codesnap.enable = true;
+}

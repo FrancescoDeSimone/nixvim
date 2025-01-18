@@ -77,5 +77,6 @@
     ./utils/snacks.nix
     ./utils/improved-search.nix
     ./utils/symbol-usage.nix
+    # ./utils/codesnap.nix
   ];
 }

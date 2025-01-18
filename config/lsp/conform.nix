@@ -27,7 +27,7 @@
         json = ["jq"];
         python = ["black"];
         lua = ["stylua"];
-        nix = ["alejandra"];
+        # nix = ["alejandra"];
         markdown = ["deno_fmt"];
         rust = ["rustfmt"];
         toml = ["taplo"];
