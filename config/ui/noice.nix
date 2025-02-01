@@ -118,10 +118,10 @@
       messages = {
         enabled = true;
         view = "notify";
-        view_error = "notify";
+        view_error = "mini";
         view_history = "messages";
         view_search = "virtualtext";
-        view_warn = "notify";
+        view_warn = "mini";
       };
       notify = {
         enabled = true;
