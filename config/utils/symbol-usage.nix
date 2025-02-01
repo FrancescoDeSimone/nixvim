@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   config = {
-    extraPlugins = with pkgs.vimPlugins; [
+    extraPlugins = [
       (pkgs.callPackage ../../repo/symbol-usage.nix {})
     ];
     extraConfigLua = ''

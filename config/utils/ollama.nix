@@ -5,7 +5,7 @@
     in [genNvim];
     extraConfigLua = ''
       require('gen').setup({
-         model = "llama3.1",
+         model = "deepseek-r1",
          host = "localhost",
          port = "11434",
          quit_map = "q",

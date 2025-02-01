@@ -65,9 +65,9 @@
     ./utils/mini.nix
     ./utils/grug-far.nix
     ./utils/oil.nix
-    ./utils/ollama.nix
+    # ./utils/ollama.nix
     ./utils/todo.nix
-    ./utils/venn.nix
+    # ./utils/venn.nix
     ./utils/vim-matchup.nix
     ./utils/vim-visual-multi.nix
     ./utils/vimtex.nix
