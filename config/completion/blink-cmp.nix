@@ -2,22 +2,31 @@
   plugins.blink-cmp = {
     enable = true;
     settings = {
-      accept = {
-        auto_brackets = {
-          enabled = true;
+      completion = {
+        accept = {
+          auto_brackets.enabled = true;
+          create_undo_point = true;
         };
-      };
-      documentation = {
-        auto_show = true;
-      };
-      highlight = {
-        use_nvim_cmp_as_default = true;
-      };
-      trigger = {
-        signature_help = {
-          enabled = true;
+        documentation = {
+          auto_show = true;
+          treesitter_highlighting = true;
+          window.border = "single";
         };
+        ghost_text.enabled = true;
+        menu.border = "single";
+      };
+      keymap = {
+        preset = "enter";
+      };
+      signature = {
+        enabled = true;
+        trigger.enabled = true;
+        window.border = "single";
       };
     };
+  };
+  plugins.blink-compat = {
+    enable = true;
+    settings.impersonate_nvim_cmp = true;
   };
 }
