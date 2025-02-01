@@ -57,6 +57,7 @@
     ./ui/nvim-ide.nix
 
     # ./utils/auto-session.nix
+    # ./utils/lazyLoad.nix
     ./utils/debugprint.nix
     ./utils/hmts.nix
     ./utils/leetcode.nix
