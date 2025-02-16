@@ -56,7 +56,6 @@
     ./ui/image.nix
     ./ui/nvim-ide.nix
 
-    # ./utils/auto-session.nix
     # ./utils/lazyLoad.nix
     ./utils/debugprint.nix
     ./utils/hmts.nix
@@ -65,9 +64,7 @@
     ./utils/mini.nix
     ./utils/grug-far.nix
     ./utils/oil.nix
-    # ./utils/ollama.nix
     ./utils/todo.nix
-    # ./utils/venn.nix
     ./utils/vim-matchup.nix
     ./utils/vim-visual-multi.nix
     ./utils/vimtex.nix
@@ -78,6 +75,5 @@
     ./utils/snacks.nix
     ./utils/improved-search.nix
     ./utils/symbol-usage.nix
-    # ./utils/codesnap.nix
   ];
 }

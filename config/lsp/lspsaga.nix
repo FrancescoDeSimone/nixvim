@@ -15,9 +15,9 @@
       diagnosticOnlyCurrent = false;
       showCodeAction = true;
     };
-    symbolInWinbar = {
-      enable = false; # Breadcrumbs
-    };
+    #symbolInWinbar = {
+    #  enable = false; # Breadcrumbs
+    #};
     codeAction = {
       extendGitSigns = true;
       showServerName = true;

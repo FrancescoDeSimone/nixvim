@@ -5,12 +5,12 @@
 }:
 vimUtils.buildVimPlugin rec {
   pname = "leetcode.nvim";
-  version = "9197cf8f09b8b50056388a6792e058af818468fe";
+  version = "db7e1cd6b9191b34b4c1f2f96e4e3949cde9f951";
 
   src = fetchFromGitHub {
     owner = "kawre";
     repo = "leetcode.nvim";
-    rev = "9197cf8f09b8b50056388a6792e058af818468fe";
+    rev = "db7e1cd6b9191b34b4c1f2f96e4e3949cde9f951";
     hash = "sha256-mrIn9bY+Wz0oc8Wkyx/zKFl1o1le5C3n96iL0lV3X2g=";
   };
 

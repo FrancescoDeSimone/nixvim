@@ -17,6 +17,7 @@
         ];
         javascript = [["prettierd" "prettier"]];
         terraform = ["terraform_fmt"];
+        tf = ["terraform_fmt"];
         yaml = ["yamlfmt"];
         javascriptreact = [["prettierd"]];
         typescript = [["prettierd"]];

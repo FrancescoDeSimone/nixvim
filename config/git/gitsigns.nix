@@ -1,8 +1,4 @@
 {
-  config,
-  lib,
-  ...
-}: {
   plugins = {
     gitsigns = {
       enable = true;

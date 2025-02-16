@@ -5,13 +5,13 @@
 }:
 vimUtils.buildVimPlugin rec {
   pname = "highlight-undo.nvim";
-  version = "ee2f6355e08719fea902e7c478aa7351934f2bb6";
+  version = "a5e2e2d43f6d131bf526619baeeeec32397b0789";
 
   src = fetchFromGitHub {
     owner = "tzachar";
     repo = "highlight-undo.nvim";
     hash = "sha256-YOU0vZ9vs1/kAeKpSNo5VHZ/uoTtX2XLIXc2cHd+J10=";
-    rev = "ee2f6355e08719fea902e7c478aa7351934f2bb6";
+    rev = "a5e2e2d43f6d131bf526619baeeeec32397b0789";
   };
 
   meta = with lib; {
